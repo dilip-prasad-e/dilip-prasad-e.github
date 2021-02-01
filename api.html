@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style\style.css">
+<title> Stuff!!! </title>
+</head>
+<body>
+<header class="page1-header">
+<p id="study">
+Study Materials 
+</p> <a href="#end" style="color: white;">end</a>
+</header>
+<section class="page1-section">
+<pre>
+
+<b id="API Testing Interview Questions:">API Testing Interview Questions:</b>	<a href="https://dilip-prasad-e.github.io/dilip-prasad-e.github.io/interview_materials_one.html">Interview Preparation Materials one</a>
+
+
+In this post, we see API Testing Interview Questions. Before going ahead, let's see some unavoidable Interview Questions which every hiring manager 
+asks you in any Software Testing interview.
+
+Let's move with the actual post on API Interview Questions And Answers.
+
+1. What is an API?
+
+API is an acronym and it stands for Application Programming Interface. API is a set of routines, protocols, and tools for building Software Applications.
+ APIs specify how one software program should interact with other software program.
+
+In simple words, API stands for Application Programming Interface. API acts as an interface between two software applications and allows the two software
+ applications to communicate with each other. API is a collection of software functions which can be executed by another software program.
+
+2. What is API Testing?
+
+API testing is a type of software testing that involves testing APIs directly and also as a part of integration testing to check whether the API meets 
+expectations in terms of functionality, reliability, performance, and security of an application. In API Testing our main focus will be on Business logic 
+layer of the software architecture. API testing can be performed on any software system which contains multiple APIs.
+
+3. What are the common API Testing Types?
+
+API testing typically involves the following practices:
+
+Unit testing
+Functional testing
+Load testing
+Runtime/ Error Detection
+Security testing
+UI testing
+Interoperability and WS Compliance testing
+Penetration testing
+Fuzz testing
+Learn more on API Testing Types
+
+4. Name some of the common protocols used in API Testing?
+
+Some of the protocols using in API Testing are as follows:
+
+HTTP
+REST
+SOAP
+JMS
+UDDI
+
+5. Difference between API and Web services?
+
+Web services:
+
+1. All web services are APIs
+2. All web services need to be exposed over web(HTTP)
+3. A Web service uses only three styles of use: SOAP, REST and XML-RPC for communication
+4. A Web service always needs a network to operate
+
+APIs:
+
+1. All APIs are not web services
+2. All APIs need not be exposed over web(i.e. HTTP)
+3. API uses multiple ways for communication e.g. DLL files in C/C++, Jar files/ RMI in java, Interrupts in Linux kernel API etc.
+4. APIs don't need a network for operation
+
+6. What is Soap?
+
+SOAP stands for Simple Object Access Protocol. It is an XML based messaging protocol. It helps in exchanging information among computers.
+
+7. What is Rest API?
+
+REST stands for Representational State Transfer. It is a set of functions helping developers in performing requests and receive responses. 
+Interaction is made through HTTP Protocol in REST API.
+
+8. Difference between SOAP and REST?
+
+SOAP:
+1. SOAP is a protocol through which two computers communicate by sharing XML document
+2. SOAP supports only XML format
+3. SOAP does not support caching
+4. SOAP is slower than REST
+5. SOAP is like custom desktop application, closely conneccted to the server
+6. SOAP runs on HTTP but envelopes the message
+
+REST:
+1. REST is a service architecture and design for network-based software architecture
+2. REST supports different data formats
+3. REST supports caching
+4. REST is faster than SOAP
+5. REST client is just like a browser and uses standard methods An application has to fit inside it
+6. REST uses the HTTP headers to hold meta information
+
+9. What are the common tests that are performed on APIs?
+
+Some of the common tests we perform on APIs are as follows.
+
+1. Verify whether the return value is based on input condition. Response of the APIs should be verified based on the request.
+2. Verify whether the system is authenticating the outcome when the API is updating any data structure
+3. Verify whether the API triggers some other event or request another API
+4. Verify the behaviour of the API when there is no return value
+
+10. What are the advantages of API Testing?
+
+API Testing is time effective when compared to GUI Testing. API test automation requires less code so it can provide faster and better test coverage.
+API Testing helps us to reduce the testing cost. With API Testing we can find minor bugs before the GUI Testing. These minor bugs will become bigger
+ during the GUI Testing. So finding those bugs in the API Testing will be cost effective to the Company.
+API Testing is language independent.
+API Testing is quite helpful in testing Core Functionality. We can test the APIs without a user interface. In GUI Testing, we need to wait until the
+ application is available to test the core functionalities.
+API Testing helps us to reduce the risks.
+
+11. What exactly needs to be verified in API Testing?
+
+Basically, on API Testing, we send a request to the API with the known data and we analyse the response.
+1. Data accuracy
+2. HTTP status codes
+3. Response time
+3. Error codes in case API returns any errors
+4. Authorization checks
+5. Non functional testing such as performance testing, security testing
+
+12. Name some tools used for API Testing?
+
+Some of the tools used for API Testing are as follows:
+
+Postman
+Katalon Studio
+SoapUI
+Assertible
+Tricentis Tosca
+Apigee
+JMeter
+Rest-Assured
+Karate DSL
+API Fortress
+Parasoft
+HP QTP(UFT)
+vREST
+Airborne
+API Science
+APIary Inspector
+Citrus Framework
+Hippie-Swagger
+HttpMaster Express
+Mockbin
+Ping API
+Pyresttest
+Rest Console
+RoboHydra Server
+SOAP Sonar
+Unirest
+WebInject
+
+
+13. List some most used templates for API documentation?
+
+Some of the API documentation templates are as follows.
+
+Swagger
+FlatDoc
+RestDoc
+API blueprint
+Slate
+Miredot
+Web service API Specification.
+
+14. Name some of the API examples which are quite popular.
+
+Some of the popular API examples are
+
+Google Maps API
+YouTube
+Twitter
+Amazon Advertising API
+
+15. Difference between API testing and Unit Testing?
+
+UNIT TESTING:
+
+Unit testing is conducted by Development Team
+Unit testing is a form of White box testing
+Unit testing is conducted prior to the process of including the code in the build
+Source code is involved in Unit testing
+In unit testing, the scope of testing is limited, so only basic functionalities are considered for testing
+API TESTING:
+
+API testing is conducted by QA Team
+API testing is a form of Black box testing
+API testing is conducted after the build is ready for testing
+Source code is not involved in API testing
+In API testing, the scope of testing is wide, so all the issues that are functional are considered for testing
+
+16. What are the main challenges faced in API testing?
+
+Some of the challenges we face while doing API testing are as follows
+
+Selecting proper parameters and its combinations
+Categorizing the parameters properly
+Proper call sequencing is required as this may lead to inadequate coverage in testing
+Verifying and validating the output
+Due to absence of GUI it is quite difficult to provide input values
+
+17. What are the types of bugs we face when performing API testing?
+
+Issues observed when performing API testing are
+
+Stress, performance, and security issues
+Duplicate or missing functionality
+Reliability issues
+Improper messaging
+Incompatible error handling mechanism
+Multi-threaded issues
+Improper errors
+
+18. How is UI testing is not similar to API testing?
+
+UI (User Interface) testing is to test the graphical interface part of the application. Its main focus is to test the look and feel of an application.
+ On the other hand, API testing enables communication between two different software systems. Its main focus is in business layer of the application.
+
+19. Name some most commonly used HTTP methods?
+
+Some of the HTTP methods are
+
+GET: It enables you to retrieve data from a server
+POST: It enables you to add data to an existing file or resource in a server
+PUT: It lets you replace an existing file or resource in a server
+DELETE: It lets you delete data from a server
+PATCH: It is used to apply partial modifications to a resource
+OPTIONS: It is used to describe the communication options for the target resource
+HEAD: It asks for a response identical to that of a GET request, but without the response body
+
+20. Can you use GET request instead of PUT to create a resource?
+
+No, GET request only allows read only rights. It enables you to retrieve data from a server but not create a resource. PUT or POST methods should
+ be used to create a resource.
+
+21. What is the difference between PUT and POST methods?
+
+PUT and POST methods are sometimes confused in regards to when each should be used. Using POST request, our intent is to create a new object on 
+the server whereas with PUT request, our intent is to replace an object by another object.
+
+POST should be used when the client sends the page to the server and then the server lets the client know where it put it. PUT should be used when 
+the client specifies the location of the page
+
+Learn API Testing in detail
+I would like to conclude this post "API Testing Interview Questions" here. Final words, Bookmark this post "API Interview Questions And Answers" 
+for future reference.
+Here I have hand-picked few posts which will help you to learn more interview related stuff:
+
+
+</pre>
+</section>
+<footer class="page1-footer">
+<p id="end"> copyright @ Dilip </p>			<a href="#study" style="color: white;">study</a>
+</footer>
+
+
+</body>
+</html>

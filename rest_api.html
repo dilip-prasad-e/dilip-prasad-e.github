@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style\style.css">
+<title> Stuff!!! </title>
+</head>
+<body>
+<header class="page1-header">
+<p id="study">
+Study Materials 
+</p> <a href="#end" style="color: white;">end</a>
+</header>
+<section class="page1-section">
+<pre>
+
+<b id="GN__RESTAPI_interview_questions:">GN__RESTAPI_interview_questions:</b>	<a href="https://dilip-prasad-e.github.io/dilip-prasad-e.github.io/interview_materials_one.html">Interview Preparation Materials one</a>
+
+
+1) Explain what is REST and RESTFUL?
+
+REST represents REpresentational State Transfer; it is a relatively new aspect of writing web API.
+
+RESTFUL is referred for web services written by applying REST architectural concept are called RESTful services, it focuses on 
+system resources and how state of resource should be transported over HTTP protocol to different clients written in different 
+language. In RESTFUL web service HTTP methods like GET, POST, PUT and DELETE can be used to perform CRUD operations.
+
+2) Explain the architectural style for creating web API?
+
+The architectural style for creating web api are
+
+HTTP for client server communication
+XML/JSON as formatting language
+Simple URI as the address for the services
+Stateless communication
+3) Mention what tools are required to test your web API?
+
+SOAPUI tool for SOAP WS and Firefox "poster" plugin for RESTFUL services.
+
+4) Mention what are the HTTP methods supported by REST?
+
+HTTP methods supported by REST are:
+
+GET: It requests a resource at the request URL. It should not contain a request body as it will be discarded. Maybe it can be 
+cached locally or on the server.
+POST: It submits information to the service for processing; it should typically return the modified or new resource
+PUT: At the request URL it update the resource
+DELETE: At the request URL it removes the resource
+OPTIONS: It indicates which techniques are supported
+HEAD: About the request URL it returns meta information
+5) Mention whether you can use GET request instead of PUT to create a resource?
+
+No, you are not supposed to use PUT for GET. GET operations should only have view rights, while PUT resource is used for updating a data.
+
+6) Mention what are resources in a REST architecture?
+
+Resources are identified by logical URLs; it is the key element of a RESTful design. Unlike, SOAP web services in REST, you view 
+the product data as a resource and this resource should contain all the required information.
+
+7) Mention what is the difference between AJAX and REST?
+
+<table class="table table-striped"><tbody><tr><td width="50%"><p> <strong> AJAX</strong> </p></td><td><p> <strong>REST</strong> </p></td></tr><tr><td><ul><li>In Ajax, the request are sent to the server by using XMLHttpRequest objects. The response is used by the JavaScript code to dynamically alter the current page</li><li>Ajax is a set of technology; it is a technique of dynamically updating parts of UI without having to reload the page</li><li>Ajax eliminates the interaction between the customer and server asynchronously</li></ul></td><td><ul><li> REST have a URL structure and a request/response pattern the revolve around the use of resources</li><li>REST is a type of software architecture and a method for users to request data or information from servers</li><li>REST requires the interaction between the customer and server</li></ul></td></tr></tbody></table>
+
+
+7) Mention some key characteristics of REST?
+
+Some key characteristics of REST includes
+
+REST is stateless, therefore the SERVER has no state (or session data)
+With a well-applied REST API, the server could be restarted between two calls as every data is passed to the server
+Web service mostly uses POST method to make operations, whereas REST uses GET to access resources
+8) Mention what are the different application integration styles?
+
+The different integration styles include
+
+Shared database
+Batch file transfer
+Invoking remote procedure (RPC)
+Swapping asynchronous messages over a message oriented middle-ware (MOM)
+9) Explain how JAXB related to RESTful web API?
+
+JAXB stands for java arch for XML binding.
+
+10) Mention what is the difference between PUT and POST?
+
+"PUT" puts a file or resource at a particular URI and exactly at that URI. If there is already a file or resource at 
+that URI, PUT changes that file or resource. If there is no resource or file there, PUT makes one
+
+POST sends data to a particular URI and expects the resource at that URI to deal with the request. The web server at 
+this point can decide what to do with the data in the context of specified resource
+
+PUT is idempotent meaning, invoking it any number of times will not have an impact on resources.
+
+However, POST is not idempotent, meaning if you invoke POST multiple times it keeps creating more resources
+
+11) Mention which markup language can be used in restful web api?
+
+JSON and XML are the two markup language that can be used in restful web api
+
+12) Mention what is the difference between RPC or document style web services? How you determine to which one to choose?
+
+In document style web services, we can transport an XML message as part of SOAP request which is not possible in RPC style 
+web service. Document style web service is most appropriate in some application where XML message behaves as document and 
+content of that document can alter and intention of web service does not rely on the content of XML message.
+
+13) Mention what is JAX-WS and JAX-RS?
+
+Both JAX-WS and JAX-RS are libraries (APIs) for doing communication in various ways in Java. JAX-WS is a library that can 
+be used to do SOAP communication in JAVA, and JAX-RS lets you do the REST communication in JAVA.
+
+14) List out the tools or API for developing or testing web api?
+
+Testing tools for web services for REST APIs includes
+
+Spring REST web service using MVC
+Jersey API
+CXF
+Axis
+Restlet,
+15) Mention what is the difference between SOAP and REST?
+
+<table class="table table-striped" width="50%"><tbody><tr><td><p><strong>SOAP</strong> </p></td><td><p><strong>REST</strong> </p></td></tr><tr><td><ul><li>SOAP is a protocol through which two computer communicates by sharing XML document</li><li>SOAP permits only XML</li><li>SOAP based reads cannot be cached</li><li>SOAP is like custom desktop application, closely connected to the server</li><li>SOAP is slower than REST</li><li>It runs on HTTP but envelopes the message</li></ul></td><td><ul><li> Rest is a service architecture and design for network-based software architectures</li><li>REST supports many different data formats</li><li>REST reads can be cached</li><li>A REST client is more like a browser; it knows how to standardized methods and an application has to fit inside it</li><li>REST is faster than SOAP</li><li>It uses the HTTP headers to hold meta information</li></ul></td></tr></tbody></table>
+
+
+
+</pre>
+</section>
+<footer class="page1-footer">
+<p id="end"> copyright @ Dilip </p>			<a href="#study" style="color: white;">study</a>
+</footer>
+
+
+</body>
+</html>

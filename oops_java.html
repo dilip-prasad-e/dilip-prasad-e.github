@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style\style.css">
+<title> Stuff!!! </title>
+</head>
+<body>
+<header class="page1-header">
+<p id="study">
+Study Materials 
+</p> <a href="#end" style="color: white;">end</a>
+</header>
+<section class="page1-section">
+<pre>
+
+<b id="OOPS Concept in Java:">OOPS Concept in Java:</b>	<a href="https://dilip-prasad-e.github.io/dilip-prasad-e.github.io/interview_materials_one.html">Interview Preparation Materials one</a>
+
+
+
+In this post, we learn OOPs Concept in Java. OOPS Stands for Object Oriented Programming System. In this tutorial, I will 
+introduce you to Class, Object, Constructor, Abstraction, Encapsulation, Inheritance, Polymorphism, Interface etc.,
+
+Class:
+A class is a blueprint or prototype from which objects are created. A class contains variables (data types) and methods (functions) 
+to describe the behavior of an object.
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cc55b9513081833215407-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cc55b9513081833215407-2">2</div><div class="crayon-num" data-line="crayon-5cc55b9513081833215407-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cc55b9513081833215407-4">4</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cc55b9513081833215407-1"><span class="crayon-t">class</span><span class="crayon-h"> </span><span class="crayon-e">Class_Name</span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cc55b9513081833215407-2"><span class="crayon-e">member </span><span class="crayon-e">variables</span></div><div class="crayon-line" id="crayon-5cc55b9513081833215407-3"><span class="crayon-i">methods</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cc55b9513081833215407-4"><span class="crayon-sy">}</span></div></div></td></tr></tbody></table>
+
+Object:
+Object is a software bundle of related state and behavior. Objects have two characteristics namely state and behavior.
+
+We can also say, Object is an entity that has state and behavior.
+
+State: It represents value (data types/variables) of an object
+Behavior: It represents the functionality (methods) of an object
+
+Object is an instance of a class.
+
+Sample:
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cc55b951308b120717058-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cc55b951308b120717058-2">2</div><div class="crayon-num" data-line="crayon-5cc55b951308b120717058-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cc55b951308b120717058-4">4</div><div class="crayon-num" data-line="crayon-5cc55b951308b120717058-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cc55b951308b120717058-6">6</div><div class="crayon-num" data-line="crayon-5cc55b951308b120717058-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cc55b951308b120717058-8">8</div><div class="crayon-num" data-line="crayon-5cc55b951308b120717058-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cc55b951308b120717058-10">10</div><div class="crayon-num" data-line="crayon-5cc55b951308b120717058-11">11</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cc55b951308b120717058-1"><span class="crayon-t">class</span><span class="crayon-h"> </span><span class="crayon-e">Computer</span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cc55b951308b120717058-2"><span class="crayon-t">String</span><span class="crayon-h"> </span><span class="crayon-v">Maker</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5cc55b951308b120717058-3"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">Model</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cc55b951308b120717058-4"><span class="crayon-t">String</span><span class="crayon-h"> </span><span class="crayon-v">Color</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5cc55b951308b120717058-5"><span class="crayon-t">void</span><span class="crayon-h"> </span><span class="crayon-e">turnOn</span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cc55b951308b120717058-6"><span class="crayon-h"> </span><span class="crayon-c">//statement(s)</span></div><div class="crayon-line" id="crayon-5cc55b951308b120717058-7"><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cc55b951308b120717058-8"><span class="crayon-t">void</span><span class="crayon-h"> </span><span class="crayon-e">turnoff</span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5cc55b951308b120717058-9"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">//statement(s)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cc55b951308b120717058-10"><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5cc55b951308b120717058-11"><span class="crayon-sy">}</span></div></div></td></tr></tbody></table>
+
+Example:
+
+State: Maker, Model, Color etc.,
+Behavior: Turn on, Turn off etc.,
+
+To understand what is a class and object in detail, let me give you a basic example related to a computer. Computer with Model 
+and Price.
+
+Assume, you have two computers of Apple and Lenovo. Now say the model of Apple is  MacBook Pro and the model of Lenovo is Yoga. 
+The price of Apple is $299 and the price of Lenovo is $99.
+
+Computer is a class which has two attributes namely Model and Price. Apple and Lenovo are the objects of the class Computer.
+
+Let's see how to create an object:
+
+Compter laptop = new Computer();
+
+Class: Computer
+Object: laptop
+Keyword: new
+Constructor: Computer()
+
+Computer is a class name followed by the name of the object laptop. Then there is a "new" keyword which is used to allocate memory. 
+Finally, there is a call to constructor "Computer()". This call initializes the new object.
+
+We create an Object by invoking the constructor of a class with the new keyword.
+
+I hope, now you got to know how to create an object
+
+Method:
+Earlier we have seen Object is an entity which has both state and behavior. Here we are going to discuss about behavior of an 
+Object. Method describes the behavior of an Object. A method consists of collection of statements which performs an action.
+
+Methods are also known as procedures or functions
+
+Let's see an example of a method declaration.
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cc55b9513090002920162-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cc55b9513090002920162-2">2</div><div class="crayon-num" data-line="crayon-5cc55b9513090002920162-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cc55b9513090002920162-4">4</div><div class="crayon-num" data-line="crayon-5cc55b9513090002920162-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cc55b9513090002920162-6">6</div><div class="crayon-num" data-line="crayon-5cc55b9513090002920162-7">7</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cc55b9513090002920162-1"><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">sum</span><span class="crayon-sy">(</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">a</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">b</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">c</span><span class="crayon-sy">)</span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cc55b9513090002920162-2"><span class="crayon-c">// method body</span></div><div class="crayon-line" id="crayon-5cc55b9513090002920162-3"><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cc55b9513090002920162-4">&nbsp;</div><div class="crayon-line" id="crayon-5cc55b9513090002920162-5"><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-t">void</span><span class="crayon-h"> </span><span class="crayon-e">sum</span><span class="crayon-sy">(</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">a</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">b</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">c</span><span class="crayon-sy">)</span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cc55b9513090002920162-6"><span class="crayon-c">// method body</span></div><div class="crayon-line" id="crayon-5cc55b9513090002920162-7"><span class="crayon-sy">}</span></div></div></td></tr></tbody></table>
+
+Every method declaration must have return type of the method, a pair of parenthesis, and a body between braces
+
+In general, method consists of 6 components.
+
+Modifiers: private, public, and others
+Return Type: The data type of the value returned by the method, or void if the method doesn't return a value.
+Method Name: Name of the method.
+Built in methods are standard such as System.out.println();
+User defined methods accept any names which a developer assigns.
+Parameters inside parenthesis: list of parameters preceded by their data types and separated with a comma. If no parameters then 
+you must specify an empty parenthesis.
+Exception: Exceptions depends on the operation of the method
+Method Body: Method body should be enclosed between braces
+
+The signature of the above declared method is
+
+Int sum(int a, int b, int c)
+
+A method has a unique name within its class. However, a method might have the same name as other methods due to method overloading.
+
+Let's see how to call methods using an object.
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cc55b9513094528506418-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cc55b9513094528506418-2">2</div><div class="crayon-num" data-line="crayon-5cc55b9513094528506418-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cc55b9513094528506418-4">4</div><div class="crayon-num" data-line="crayon-5cc55b9513094528506418-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cc55b9513094528506418-6">6</div><div class="crayon-num" data-line="crayon-5cc55b9513094528506418-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cc55b9513094528506418-8">8</div><div class="crayon-num" data-line="crayon-5cc55b9513094528506418-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cc55b9513094528506418-10">10</div><div class="crayon-num" data-line="crayon-5cc55b9513094528506418-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cc55b9513094528506418-12">12</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cc55b9513094528506418-1"><span class="crayon-t">class</span><span class="crayon-h"> </span><span class="crayon-e">Computer</span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cc55b9513094528506418-2"><span class="crayon-c">// method</span></div><div class="crayon-line" id="crayon-5cc55b9513094528506418-3"><span class="crayon-t">void</span><span class="crayon-h"> </span><span class="crayon-e">turnOn</span><span class="crayon-sy">{</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cc55b9513094528506418-4"><span class="crayon-h"> </span><span class="crayon-c">//statement(s)</span></div><div class="crayon-line" id="crayon-5cc55b9513094528506418-5"><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cc55b9513094528506418-6"><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-m">static</span><span class="crayon-h"> </span><span class="crayon-t">void</span><span class="crayon-h"> </span><span class="crayon-e">main</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-t">String</span><span class="crayon-h"> </span><span class="crayon-sy">[</span><span class="crayon-sy">]</span><span class="crayon-h"> </span><span class="crayon-v">args</span><span class="crayon-sy">)</span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5cc55b9513094528506418-7"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">// Created an object </span></div><div class="crayon-line crayon-striped-line" id="crayon-5cc55b9513094528506418-8"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">Computer </span><span class="crayon-v">laptop</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">Computer</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5cc55b9513094528506418-9"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">//Method called</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cc55b9513094528506418-10"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">laptop</span><span class="crayon-sy">.</span><span class="crayon-e">turnOn</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5cc55b9513094528506418-11"><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cc55b9513094528506418-12"><span class="crayon-sy">}</span></div></div></td></tr></tbody></table>
+
+Hope you have heard a phrase "Instantiating a class". The phrase "Instantiating a class" means the same thing as "Creating an Object" 
+which we did in the above program. Whenever you create an Object, it means you are creating an instance of a class, therefore 
+"instantiating a class".
+
+Methods are of two types
+
+1. Built-in methods or Pre-defined methods: Methods such as String methods, Date & Time methods, etc.,
+2. User Defined methods: It contains 'method with returning value' and 'method without returning any value'
+
+Constructor:
+Constructor in Java is used in the creation of an Object that is an instance of a Class. Constructor name should be same as 
+class name. It looks like a method but its not a method. It wont return any value. We have seen that methods may return a value. 
+If there is no constructor in a class, then compiler automatically creates a default constructor.
+
+Inheritance:
+
+Inheritance is a process where one class inherits the properties of another class.
+
+Let's say we have two classes namely Parent Class and Child Class. Child class is also known as Derived Class. As per the above 
+definition, the Child class inherits the properties of the Parent Class. The main purpose of Inheritance is Code Reusability.
+
+Assume we have a Class named Laptop, Apple MacBook Pro, Lenovo Yoga. Apple MacBook Pro and Lenovo Yoga classes extend the 
+Laptop Class to inherit the properties of the Laptop Class.
+
+Encapsulation:
+
+Encapsulation is a mechanism of binding code and data together in a single unit. Let's take an example of Capsule. Different 
+powdered or liquid medicines are encapsulated inside a capsule. Likewise in encapsulation, all the methods and variables are 
+wrapped together in a single class.
+
+Polymorphism:
+
+Polymorphism allows us to perform a task in multiple ways. Let's break the word Polymorphism and see it, 'Poly' means 
+'Many' and 'Morphos' means 'Shapes'.
+
+Let's see an example. Assume we have four students and we asked them to draw a shape. All the four may draw different shapes 
+like Circle, Triangle, and Rectangle, .
+
+Abstraction:
+
+Abstraction is the methodology of hiding the implementation of internal details and showing the functionality to the users.
+
+Example: Mobile Phone.
+
+A layman who is using mobile phone doesn't know how it works internally but he can make phone calls.
+
+Abstraction in Java is achieved using abstract classes and interfaces.
+
+
+</pre>
+</section>
+<footer class="page1-footer">
+<p id="end"> copyright @ Dilip </p>			<a href="#study" style="color: white;">study</a>
+</footer>
+
+
+</body>
+</html>
