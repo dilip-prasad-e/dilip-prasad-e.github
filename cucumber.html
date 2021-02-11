@@ -347,8 +347,9 @@ Q #31) What is the maximum number of steps that are to be written within a scena
 
 Answer: 3-4 steps.
 
-<b>basic cucumber selenium interview questions:</b>
 
+
+1- General Selenium Webdriver Cucumber Interview Questions.
 Q-1: What is a test framework?
 
 In general, a framework is an entity which binds several modules in a logical sequence to cover the end-to-end flows of an application. The objective of investing in a framework is to test a product which has a recurring roadmap and regular release cycle.
@@ -464,9 +465,463 @@ It’s the most obvious Selenium Webdriver Cucumber interview question which you
     &lt;version&gt;1.1.5&lt;/version&gt;
 &lt;/dependency&gt;</pre>
 
+6- Similarly, you can introduce the Selenium dependency into the above project. Alternatively, you can download the latest version of Selenium standalone jar from their website. And then, add to your project as an external jar file.
+
+If you want to do it via the POM file, then add the following entry.
+
+<pre class="lang:xhtml decode:true ">&lt;dependency&gt;
+  &lt;groupid&gt;org.seleniumhq.selenium&lt;/groupid&gt;
+  &lt;artifactid&gt;selenium-java&lt;/artifactid&gt;
+  &lt;version&gt;2.53.0&lt;/version&gt;
+&lt;/dependency&gt;</pre>
+
+Q-8: Are there any readymade Selenium-Cucumber frameworks available?
+
+Yes, there are a few we are listing down below. Though, we recommend building one of your own as it gives you more freedom.
+
+1- Selenium-Cucumber framework for testing the web and Android apps.
+
+2- Another one is an acceptance testing framework using Cucumber and Selenium Webdriver.
+
+4- Advanced Level Selenium Webdriver Cucumber Interview Questions.
+Now Let’s start to discuss some of the internal Selenium Webdriver Cucumber interview questions.
+
+Q-9: What are the two files which you need to run a Cucumber test scenario?
+
+If you want to execute a Cucumber test, then make sure it has the following two files.
+
+1- A feature file.
+
+2- A step definition file.
+
+ 
+
+Q-10: What does a feature file contain?
+
+A feature file in cucumber specifies parameters and conditions for executing the test code. It can combine any of the following.
+
+1- A feature.
+2- A user scenario.
+3- The scenario outline.
+4- A <Given> clause.
+5- A <When> clause.
+6- A <Then> clause.
+
+ 
+
+Q-11: What is a profile in cucumber?
+
+You can create Cucumber profiles to run a set of features and step definitions. Use the following command to execute a cucumber profile.
+
+<pre class="lang:sh decode:true">cucumber features -p &lt;profile_name&gt;
+
+#Example: cucumber features -p acceptance</pre>
+
+Q-12: What are before, after, beforeStep and afterStep hooks?
+
+1- Before: executes before the feature file execution.
+
+2- After: executes after the feature file execution.
+
+3- BeforeStep: executes before each step execution.
+
+4- AfterStep: executes after each step execution.
+
+ 
+
+Q-13: What are cucumber tags? And why do we use them?
+
+Cucumber tags help in filtering the scenarios. We can tag the scenarios and then run them based on tags.
+
+1- We can add tags to scenarios with the <@> symbol.
+
+2- We can use the following command to run a cucumber tagged scenario.
 
 
+<pre class="lang:sh decode:true ">cucumber features -t @&lt;tag_name&gt;
 
+#Example: cucumber features -t @test</pre>
+
+
+5- Expert Level Selenium Webdriver Cucumber Interview Questions.
+Q-14: What is the purpose of cucumber dry-run?
+
+We use to compile the cucumber feature files and step definitions. If there occur any compilation errors, then it shows them on the console.
+
+ 
+
+Q-15: Why do you use the scenario outline?
+
+We use it to execute the same scenario with different test data.
+
+ 
+
+Q-16: What if you don’t use the cucumber keywords in test steps?
+
+Please note that it’s not mandatory to write keywords in test steps.
+
+For example, we can build a test step like the one shown in the next line.
+
+e.g.- We are testing using Cucumber.
+
+ 
+
+Q-17: List out some of the main differences between Jbehave and Cucumber?
+
+However, the Cucumber and Jbehave share the same perspective, but there are few key differences.
+
+1- Jbehave is Java-based and Cucumber is Ruby-based.
+
+2- Jbehave is story-driven whereas the Cucumber is feature-driven.
+
+ 
+
+Q-18: When would you use RSpec and when to use Cucumber?
+
+1- RSpec is more successful in doing unit testing.
+
+2- As you know that Cucumber is a behavior-driven development tool. So you can use it for System and Integration testing.
+
+ 
+
+Q-19: What are the steps to generate a report in Cucumber?
+
+We run the following command to produce HTML reports.
+
+<pre class="lang:sh decode:true ">cucumber &lt;featurename&gt;.feature --format html --out report.html --format pretty</pre>
+
+Q-20: What is the right way to execute a specific scenario from the feature file?
+
+We can select the target scenario from a feature file by providing its line number.
+
+<pre class="lang:sh decode:true ">cucumber features/test.feature:10 --format html &gt; testfeature.html</pre>
+
+<b>advanced cucumber interview questions:</b>
+
+
+1 Explain about examples in Cucumber?
+
+Examples are different sets of Inputs/Data. 
+
+Given <I am a placeholder>
+
+The placeholders in Given or then indicate that when the Examples row is run they should be substituted with real values from the Examples table.
+
+ If a placeholder name is the same as a column title in the Examples table then this is the value that will replace it.
+
+Given the input "<input>"
+
+When the calculator is run
+
+Then the output should be "<output>"
+
+Examples:
+
+| input | output |
+
+| 2+2 | 4 |
+
+| 98+1 | 99 |
+
+
+2 Explain about and, but keywords in Cucumber?
+
+“And” is used to combine two or more same type of action.
+
+Cucumber steps beginning with “And” or “But” are exactly the same as all other steps.
+
+Example:
+
+      Given one thing
+
+      And another thing
+
+      When I open my eyes
+
+      Then I see something
+
+      But I don't see something else
+	  
+	  
+3 How you will comment in Cucumber?
+
+Cucumber allows you to precede Feature and Scenario keywords with comments.
+
+Comments will be denoted with #
+
+Example
+
+# This is a feature
+
+Feature: Adding
+
+# This is Scenario
+
+Scenario: Add two numbers
+
+Given……..
+
+
+4 What do you mean by grouping in Cucumber?
+
+Cucumber will not take care how you name your step definition files and what step definitions you put in which file.
+
+You can create steps.rb file for each Major operation / Features instead of keeping all steps in a single file. This process is called a grouping.
+
+Example
+
+Under features folder
+
+Adding_steps.rb
+Multiplying_steps.rb
+
+5 What do you mean by tag in Cucumber?
+
+Tags are the sticky notes you’ve put on pages you want to be able to find easily. 
+
+You tag a scenario by putting a word prefixed with the @ character on the line before the Scenario keyword.
+
+If you want to tag all the scenarios in a feature at once, just tag the Feature element at the top, and all the scenarios will inherit the tag.
+
+You can attach multiple tags to the same scenario, separated with spaces.
+
+Example
+
+@adding @two @numbers
+
+Feature: Adding
+
+@add 
+
+Scenario Outline: Add two numbers
+
+6  How can you generate reports using Cucumber?
+
+You can generate the output/report of the cucumber using different cucumber commands.
+
+>cucumber adding.feature --format HTML 
+
+>cucumber adding.feature --out report.html 
+
+>cucumber adding.feature --format pretty
+
+The report file will be stored in the project folder itself.
+
+7 What is the use of Step definition files?
+
+Step definition maps the test case steps in the feature files(introduced by Given/When/Then) to code which executes and checks the outcomes from the system under test.
+
+A step definition is analogous to a method defined in any kind of Object Oriented programming language.
+
+Step definition is defined in ruby files under features/step_definitions/*_steps.rb".
+
+8 How can you get colored output (cucumber results) in command prompt?
+
+Ansicon is used to give colored output for features, Step definitions, Errors, and test results.
+
+Download the ansicon and select 32 bit/64 bit depends upon your system configuration.
+
+9 How many spoken language cucumber supports?
+
+Cucumber supports over 40 spoken languages and the number is still growing.
+
+Using the #language: header, you can write your features in different spoken languages. 
+
+Add it on the first line of a feature file will tell us which spoken language cucumber is using.
+
+Example
+
+# language: en
+
+Feature: This is Feature title
+
+10 Explain successful steps in Cucumber?
+
+When Cucumber finds a matching Step Definition it will execute it. If the block in the step definition doesn’t raise an Exception, the step is marked as successful (green).
+
+11 Explain undefined steps in Cucumber?
+
+When Cucumber can’t find a matching Step Definition the step gets marked as yellow, and all subsequent steps in the scenario are skipped.
+
+12  Define pending steps in Cucumber?
+
+When a Step Definition’s Proc invokes the pending method, the step is marked as yellow (as with undefined ones), reminding you that you have work to do.
+
+13  Explain skipped steps in Cucumber?
+
+Steps that follow undefined, pending or failed steps are never executed (even if there is a matching Step Definition) and are marked cyan.  
+
+14  Name some reporting tools to be used with Cucumber?
+
+You can use report tools like Jenkins or bamboo tool.
+**********************************************************************
+
+1 How Cucumber is used in Acceptance Testing?
+
+In Software engineering, acceptance testing is a test conducted to determine if the requirements of a specification are met or not. Instead of a business stakeholder passing requirements to the development team, the developer and stakeholder collaborate to write automated tests that express the outcome that the stakeholder wants.
+
+Cucumber is a tool based on Behavior Driven Development (BDD) framework which is used to write acceptance tests for a web application.
+
+2 What do you mean by BDD?
+
+Behavior-driven development – in short BDD
+
+Behavior-driven development combines the general techniques and principles of TDD to provide software development and management teams with shared tools and a shared process to collaborate on software development.
+
+TDD practitioners work from the outside-in, starting with a failing customer acceptance test that describes the behavior of the system from the customer’s point of view.
+
+3 What is Cucumber?
+
+Cucumber is a tool based on Behavior Driven Development (BDD) framework which is used to write acceptance tests for a web application. It is written in Ruby.
+
+It allows automation of functional validation in an easily readable and understandable format like plain English. Cucumber can be used along with Selenium, Watir, and Capybara etc.
+
+Cucumber supports many other languages like Perl, PHP, Python, Java etc.
+
+
+4 Explain how Cucumber works?
+
+A cucumber is a command-line tool. When you run it, 
+
+It reads in your specifications from plain-language text files called features files.
+Along with the features, you give Cucumber a set of step definitions, which map the business-readable language of each step into Ruby code.
+Once all the steps are added run the cucumber again to get the passed test cases or failed test cases.
+Repeat the steps until all the test cases are being passed. 	
+
+5 What are the advantages of a Cucumber?
+
+Cucumber tool has a lot of advantages.
+
+It is helpful to involve business stakeholders who can't easily read a code.
+Cucumber focuses on end-user experience.
+Style of writing tests allows for easier reuse of code in the tests.
+Quick and easy setup and execution.
+An efficient tool for testing
+
+6 Explain about the Directory Layout of the Cucumber Project?
+
+features - folder has all .feature files
+step_definitions - folder has all step definitions files
+support – folder has all the supported modules/libraries/files
+Gemfile - list of Rubygems(optional)
+Test results – folder has all the reports generated(optional)
+
+7 What are the parts of the feature folder?
+
+Cucumber tests are grouped into features. Features give information about the high-level business functionality and the purpose of Application under test. Feature files are get stored here.
+
+Feature folder has two subfolders
+
+step_definitions - folder has all step definitions files
+support – folder has all the supported modules/libraries/files
+
+8 Explain about the feature file?
+
+Feature files are an essential part of cucumber which is used to write test automation steps or acceptance tests. This can be used as a live document. The steps are the application specification. All the feature files end with .feature extension.
+
+9 What is the use of Regular Expressions in Cucumber?
+
+Cucumber uses expressions to link a Gherkin Step to a Step Definition. You can use Regular Expressions or Cucumber Expressions.
+
+Regular expressions are handy to filter/find a specific matching pattern in any text.  
+
+Cucumber Expressions offer similar functionality to Regular Expressions, with a syntax that is easier to read and write.
+
+10 Explain about Scenario?
+
+what to do. By seeing the scenario user should be able to understand the intent behind the scenario and what the test is all about.
+
+Each scenario should follow given, when and then format.
+
+Example
+
+Feature: Subtraction
+
+Scenario: Subtracting two numbers
+
+11 What do you mean by Gherkin?
+
+Gherkin is the language that Cucumber uses to define test cases. It is designed to be non-technical and human-readable, and collectively describes use cases relating to a software system. It is a Business Readable, Domain Specific Language (DSL).
+
+Gherkin gives two purposes in Cucumber
+
+Documentation 
+Automated tests
+
+
+12 Give the structure of the Gherkin File?
+
+A Gherkin file is given its structure and meaning using a set of special keywords.
+
+Feature
+Background, Scenario, Scenario Outline
+Given
+When
+Then
+And, But
+Examples
+
+13 What is the use of Scenario outline in a feature file?
+
+Scenario outline is a way of parameterization of scenarios. Scenario outlines are used when the same test has to be performed with different data set, however, the test steps remain the same. 
+
+Scenario Outline must be followed by the keyword ‘Examples’, which specify the set of values for each parameter.
+
+Example
+
+Feature: Subtracting
+
+Scenario Outline: Subtracting any two numbers
+
+14 Explain background keyword in cucumber?
+
+Whenever any step is required to perform in each scenario then those steps need to be placed in Background. Background generally has the instruction on what to set up before each scenario runs.
+
+Feature: Subtracting
+
+Background: The calculator should be reset to 0.
+
+Scenario Outline: Subtracting two numbers
+
+15 Explain the given keyword in Cucumber?
+
+“Given” specifies the pre-conditions. It is basically a known state.
+
+The purpose of givens is to put the system in a known state before the user starts interacting with the system.
+
+Example
+
+Given the input "<input>"
+
+When the calculator is run
+
+Then the output should be "<output>"
+
+16 Explain when keyword in Cucumber?
+
+The purpose of “When” is to describe the key action the user performs.
+
+In other words “When” is used when some action is to be performed.
+
+Example
+
+Given the input "<input>"
+
+When the calculator is run
+
+Then the output should be "<output>"
+
+17 Explain about then keyword in Cucumber?
+
+The expected outcome or result should be placed here. The purpose of “Then” steps is to observe outcomes. The observations should be related to the business value/benefit in your feature description. The observations should also be on some kind of output.
+
+Example
+
+Given the input "<input>"
+
+When the calculator is run
+
+Then the output should be "<output>"
 
 
 
