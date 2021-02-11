@@ -13,7 +13,7 @@ Study Materials
 <section class="page1-section">
 <pre>
 
-<b id="GN__Cucumber_interview_questions:">GN__Cucumber_interview_questions:</b>	<a href="https://dilip-prasad-e.github.io/dilip-prasad-e.github.io/interview_materials_one.html">Interview Preparation Materials one</a>
+<b id="GN__Cucumber_interview_questions:">GN__Cucumber_interview_questions:</b>	<a href="https://dilip-prasad-e.github.io/dilip-prasad-e.github.io/interview_materials_two.html">Interview Preparation Materials two</a>
 
 1) What is Cucumber? What are the advantages of Cucumber?
 
@@ -135,6 +135,339 @@ Allows quick and easy setup and execution
 
 Step definition maps the Test Case Steps in the feature files to code. It executes the steps on Application Under Test and checks the outcomes 
 against expected results. In order to execute step definition it must match the given component in a feature.
+
+
+<b>basic cucumber interview questions:</b>
+
+Q #1) Explain Cucumber shortly.
+
+Answer: Cucumber is a tool that is based on Behavior Driven Development (BDD) methodology.
+
+The main aim of the Behavior Driven Development framework is to make various project roles such as Business Analysts, Quality Assurance, Developers, etc., understand the application without diving deep into the technical aspects.
+
+Q #2) What language is used by Cucumber?
+
+Answer: Gherkin is the language that is used by the Cucumber tool. It is a simple English representation of the application behavior. Gherkin language uses several keywords to describe the behavior of applications such as Feature, Scenario, Scenario Outline, Given, When, Then, etc.
+
+Q #3) What is meant by a feature file?
+
+Answer: A feature file must provide a high-level description of an Application Under Test (AUT). The first line of the feature file must start with the keyword ‘Feature’ followed by the description of the application under test.
+
+A feature file may include multiple scenarios within the same file. A feature file has the extension .feature.
+
+Q #4) What are the various keywords that are used in Cucumber for writing a scenario?
+
+Answer: Mentioned below are the keywords that are used for writing a scenario:
+
+Given
+When
+Then
+And
+Q #5) What is the purpose of a Scenario Outline in Cucumber?
+
+Answer: Scenario outline is a way of parameterization of scenarios. This is ideally used when the same scenario needs to be executed for multiple sets of data, however, the test steps remain the same. Scenario Outline must be followed by the keyword ‘Examples’, which specify the set of values for each parameter.
+
+Q #6) What programming language is used by Cucumber?
+
+Answer: Cucumber tool provides support for multiple programming languages such as Java, .Net, Ruby etc. It can also be integrated with multiple tools such as Selenium, Capybara, etc.
+
+Q #7) What is the purpose of the Step Definition file in Cucumber?
+
+Answer: A step definition file in Cucumber is used to segregate the feature files from the underlying code. Each step of the feature file can be mapped to a corresponding method on the Step Definition file.
+
+While feature files are written in an easily understandable language like, Gherkin, Step Definition files are written in programming languages such as Java, .Net, Ruby, etc.
+
+Q #8) What are the major advantages of the Cucumber framework?
+
+Answer: Given below are the advantages of the Cucumber Gherkin framework that make Cucumber an ideal choice for rapidly evolving Agile methodology in today’s corporate world.
+
+Cucumber is an open-source tool.
+Plain Text representation makes it easier for non-technical users to understand the scenarios.
+It bridges the communication gap between various project stakeholders such as Business Analysts, Developers, and Quality Assurance personnel.
+Automation test cases developed using the Cucumber tool are easier to maintain and understand as well.
+Easy to integrate with other tools such as Selenium and Capybara.
+Q #9) Provide an example of a feature file using the Cucumber framework.
+
+Answer: Following is an example of a feature file for the scenario ‘Login into the application’:
+
+Feature: Login to the application under test.
+Scenario: Login to the application.
+
+Open the Chrome browser and launch the application.
+When the user enters the username onto the UserName field.
+And User enters the password into the Password field.
+When the user clicks on the Login button.
+Then validate if the user login is successful.
+
+
+Q #10) Provide an example of a Scenario Outline using the Cucumber framework.
+
+Answer: The following is an example of a Scenario Outline keyword for the scenario ‘Upload a file’. The number of parameter values to be included in the feature file is based on the tester’s choice.
+
+Scenario Outline: Upload a file
+
+Given that the user is on upload file screen.
+When a user clicks on the Browse button.
+And user enters <filename> onto the upload textbox.
+And user clicks on the enter button.
+Then verify that the file upload is successful.
+
+Example:
+
+|filename|
+|file1|
+|file2|
+
+Q #11) What is the purpose of the Behaviour Driven Development (BDD) methodology in the real world?
+
+Answer: BDD is a methodology to understand the functionality of an application in the simple plain text representation.
+
+The main aim of the Behavior Driven Development framework is to make various project roles such as Business Analysts, Quality Assurance, Developers, Support Teams understand the application without diving deep into the technical aspects.
+
+Q #12) What is the limit for the maximum number of scenarios that can be included in the feature file?
+
+Answer: A feature file can contain a maximum of 10 scenarios, but the number can vary from project to project and from one organization to another. But it is generally advisable to limit the number of scenarios included in the feature file.
+
+Q #13) What is the use of Background keyword in Cucumber?
+
+Answer: Background keyword is used to group multiple given statements into a single group. This is generally used when the same set of given statements are repeated in each scenario of the feature file.
+
+Q #14) What symbol is used for parameterization in Cucumber?
+
+Answer: Pipe symbol (|) is used to specify one or more parameter values in a feature file.
+
+Q #15) What is the purpose of Examples keyword in Cucumber?
+
+Ans: Examples keyword is used to specify values for each parameter used in the scenario. Scenario Outline keyword must always be followed by the keyword Examples.
+
+Q #16) What is the file extension for a feature file?
+
+Answer: File Extension for a feature file is .feature. A feature file is ideally written in a notepad file and is saved with the extension feature.
+
+Q #17) Provide an example of a step definition file in Cucumber.
+
+Answer: Step definition corresponding to the step “Open Chrome browser and launch the application” may look like the code mentioned below:
+
+
+<pre>@Given("^Open Chrome browser and launch the application$")
+public void openBrowser()
+
+{
+driver = new ChromeDriver();
+driver.manage().window().maximize();
+driver.get("www.facebook.com");
+}</pre>
+
+
+Q #18) What is the purpose of the Cucumber Options tag?
+
+Answer: Cucumber Options tag is used to provide a link between the feature files and step definition files. Each step of the feature file is mapped to a corresponding method on the step definition file.
+
+Below is the syntax of Cucumber Options tag:
+
+<pre>@CucumberOptions(features="Features",glue={"StepDefinition"})</pre>
+
+Q #19) How can Cucumber be integrated with Selenium WebDriver?
+
+Answer: Cucumber can be integrated with the Selenium Webdriver by downloading the necessary JAR files.
+
+Given below are the list of JAR files that are to be downloaded for using Cucumber with Selenium web driver:
+
+cucumber-core-1.2.2.jar
+cucumber-java-1.2.2.jar
+cucumber-junit-1.2.2.jar
+cucumber-jvm-deps-1.0.3.jar
+cucumber-reporting-0.1.0.jar
+gherkin-2.12.2.jar
+Q #20) When is Cucumber used in real-time?
+
+Answer: Cucumber tool is generally used in real-time to write acceptance tests for an application. It is generally used by non-technical people such as Business Analysts, Functional Testers, etc.
+
+Q #21) Provide an example of Background keyword in Cucumber.
+
+Answer:
+
+Background: Given the user is on the application login page.
+
+Q #22) What is the use of Behavior Driven Development in Agile methodology?
+
+Answer: The advantages of Behavior Driven Development are best realized when non-technical users such as Business Analysts use BDD to draft requirements and provide the same to the developers for implementation.
+
+In Agile methodology, user stories can be written in the format of feature file and the same can be taken up for implementation by the developers.
+
+Q #23) Explain the purpose of keywords that are used for writing a scenario in Cucumber.
+
+Answer:
+
+“Given” keyword is used to specify a precondition for the scenario.
+“When” keyword is used to specify an operation to be performed.
+“Then” keyword is used to specify the expected result of a performed action.
+“And” keyword is used to join one or more statements together into a single statement.
+Q #24) What is the name of the plugin that is used to integrate Eclipse with Cucumber?
+
+Answer: Cucumber Natural Plugin is the plugin that is used to integrate Eclipse with Cucumber.
+
+Q #25) What is the meaning of the TestRunner class in Cucumber?
+
+Answer: TestRunner class is used to provide the link between the feature file and the step definition file. The next question provides a sample representation of how the TestRunner class will look like. A TestRunner class is generally an empty class with no class definition.
+
+Q #26) Provide an example of the TestRunner class in Cucumber.
+
+Answer:
+
+<pre>Package com.sample.TestRunner
+
+importorg.junit.runner.RunWith; 
+importcucumber.api.CucumberOptions; 
+importcucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class) 
+@CucumberOptions(features="Features",glue={"StepDefinition"}) 
+public class Runner 
+{
+}</pre>
+
+Q #27) What is the starting point of execution for feature files?
+
+Answer: When integrated with Selenium, the starting point of execution must be from the TestRunner class.
+
+Q #28) Should any code be written within the TestRunner class?
+
+Answer: No code should be written under the TestRunner class. It should include the tags @RunWith and @CucumberOptions.
+
+Q #29) What is the use of features property under the Cucumber Options tag?
+
+Answer: Features property is used to let the Cucumber framework identify the location of the feature files.
+
+Q #30) What is the use of glue property under the Cucumber Options tag?
+
+Answer: Glue property is used to let the Cucumber framework identify the location of step definition files.
+
+Q #31) What is the maximum number of steps that are to be written within a scenario?
+
+Answer: 3-4 steps.
+
+<b>basic cucumber selenium interview questions:</b>
+
+Q-1: What is a test framework?
+
+In general, a framework is an entity which binds several modules in a logical sequence to cover the end-to-end flows of an application. The objective of investing in a framework is to test a product which has a recurring roadmap and regular release cycle.
+
+ 
+
+Q-2: What are the apparent advantages of a test framework?
+
+Following are the possible benefits of using a test framework.
+
+1- It reduces the complexity of using a variety of technologies inculcated in a product.
+
+2- It organizes the unit and functional testing efforts of a developer and tester.
+
+3- Provides early feedback on the quality of the code.
+
+4- Helps in tracking test coverage as well as code coverage.
+
+5- Results in easy debugging and reduces chances of errors.
+
+ 
+
+Q-3: What type of tests Selenium can run?
+
+1- You can use Selenium for the functional, regression, and load testing of the web-based applications.
+
+2- You can employ this tool for doing the post-release validation.
+
+3- Integrate it with the continuous integration tools like Jenkins, Hudson, QuickBuild or CruiseControl.
+
+The above two questions were a little basic which sometimes we miss explaining during the interview. So, we thought it was worth starting with them.
+
+Moving down, you can see all the questions below are specific to the Selenium Webdriver Cucumber interview.
+
+2- Basic Level Selenium Webdriver Cucumber Interview Questions.
+Q-4: What are the prereqs for building a Selenium Cucumber automation framework?
+
+You might like to consider the following facts while creating a productive and scalable test framework.
+
+1- Identify the type of application you are going to test. Is it a Web app, support mobile devices or runs on a desktop.
+
+2- Would it require backend testing? e.g. Databases or SDK.
+
+3- Decide on the input format. Is it static or dynamic?
+
+4- Do you need to test the app for internationalization?
+
+5- It must have a report which can help you trace a failure with minimum efforts.
+
+6- It must support the auto-generation of parametrization tests.
+
+7- Have a config file to define any setup related settings or global properties.
+
+8- Apply abstraction at every level to separate the functionality.
+
+If you follow the above rules, then you’ll land up with a product which is easy to maintain and free to scale.
+
+ 
+
+Q-5: List down the advantages of using Selenium as a testing tool?
+
+1- It’s an open source, so you save a lot on the cost side.
+
+2- It gives you options to choose from a list of programming languages. e.g. Java, Python, C-Sharp, Ruby, and Python.
+
+3- It offers easy and powerful dom-level testing.
+
+4- You can use it in either of Agile or waterfall environment.
+
+5- Easy integration with Jenkins, Bamboo, and some other notable CI tools.
+
+ 
+
+Q-6: List down the mobile device which Selenium supports?
+
+1- It supports Safari browser via a third-party driver. It is experimental and comes with limited functionality.
+
+2- It provides an Android driver to run tests on its native mobile browser.
+
+ 
+
+3- Intermediate Level Selenium Webdriver Cucumber Interview Questions.
+Q-7: How to integrate Cucumber with Selenium Webdriver?
+
+It’s the most obvious Selenium Webdriver Cucumber interview question which you must know. And it’s better if you give a step by step reply to the interviewer. It’ll leave a positive impression on him as you’ll show the depth of your knowledge.
+
+1- Cucumber is a testing framework to run acceptance test cases. It creates scripts using the BDD approach.
+
+2- It makes use of a feature file which describes the test cases in plain text format.
+
+3- Here you write tests in simple English. And later use the Selenium Webdriver to run the test scripts.
+
+4- To start Cucumber with Selenium, first of all, you require creating a Maven project in Eclipse.
+
+5- In the Maven’s POM file, you add the Cucumber dependency which brings the support of annotations like the <Given>, <When>, and <Then> and many other.
+
+
+<pre class="lang:xhtml decode:true ">&lt;dependency&gt;
+    &lt;groupId&gt;info.cukes&lt;/groupId&gt;
+    &lt;artifactId&gt;cucumber-core&lt;/artifactId&gt;
+    &lt;version&gt;1.1.5&lt;/version&gt;
+&lt;/dependency&gt;
+ 
+&lt;dependency&gt;
+    &lt;groupId&gt;info.cukes&lt;/groupId&gt;
+    &lt;artifactId&gt;cucumber-java&lt;/artifactId&gt;
+    &lt;version&gt;1.1.5&lt;/version&gt;
+&lt;/dependency&gt;
+ 
+&lt;dependency&gt;
+    &lt;groupId&gt;info.cukes&lt;/groupId&gt;
+    &lt;artifactId&gt;cucumber-junit&lt;/artifactId&gt;
+    &lt;version&gt;1.1.5&lt;/version&gt;
+&lt;/dependency&gt;</pre>
+
+
+
+
+
 
 
 </pre>
