@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style\style.css">
+<title> Stuff!!! </title>
+</head>
+<body>
+<header class="page1-header">
+<p id="study">
+Study Materials 
+</p> <a href="#end" style="color: white;">end</a>
+</header>
+<section class="page1-section">
+<pre>
+
+<b id="GN__JMeter_interview_questions:">GN__JMeter_interview_questions:</b>	<a href="https://dilip-prasad-e.github.io/dilip-prasad-e.github.io/index.html">study</a>
+
+1) Explain what is JMeter?
+
+JMeter is a Java tool, which is used for performance Load Testing.
+
+2) Explain how JMeter works?
+
+JMeter acts like a group of users sending requests to a target server. It collects response from the target server and other statistics which show the 
+performance of the application or server via graphs or tables.
+
+3) Explain where you can use functions and variables?
+
+Variables and functions can be written into any field of any test component
+
+4) Mention what are regular expressions in JMeter?
+
+Based on the pattern, a regular expression is used to search and manipulate text. JMeter is useful in interpreting forms of regular expression or patterns 
+being used throughout a JMeter test plan.
+
+5) Explain what is Samplers and Thread groups?
+
+Thread group: For any test plan, JMeter is the beginning part of thread group elements. It is an important element of JMeter, where you can set a number 
+of users and time to load all the users given in the thread group
+Samplers: Sampler generates one or more sample results; these sample results have many attributes like elapsed time, data size, etc. Samplers allow 
+JMeter to send specific types of requests to the server, through samplers, thread group decides which type of request it needs to make. Some of the 
+useful samplers are HTTP request, FTP request, JDBC request and so on.
+6) Whether the test plans built using JMeter are OS dependent?
+
+Usually, Test Plan are saved in their XML format, so there is nothing to do with any particular O.S. It can be run on any OS where JMeter can run.
+
+7) Mention what are the types of a processor in JMeter?
+
+The types of a processor in JMeter are
+
+Pre-processor
+Post processor
+8) Explain what are Pre-processor Elements? List some of the pre-processor elements?
+
+A pre-processor is something that will happen before the sampler executes. To configure the sample request prior to its execution or to update variables
+ that are not extracted from response text pre-processor elements are used.
+
+Some of the pre-processor elements are
+
+HTTP URL re-writing modifier
+HTTP user parameter modifier
+HTML link parser
+BeanShell PreProcessor
+9) Mention the execution order of Test Elements?
+
+The test plans elements execution order is
+
+Configuration elements
+Pre-processors
+Timers
+Samplers
+Post-processors
+Assertions
+Listeners
+10) What does "contain" and "matches" indicates in the regular expression?
+
+In the regular expression, contains indicates that the regular expression matched at least some part of the target. While matches mean the regular 
+expression matched the whole target. So, 'alphabet' is "matched" by 'al.*t.'
+
+11) Explain what is the configuration elements?
+
+A configuration element works parallel with a Sampler. To set up defaults and variables for later use by samplers configuration elements can be 
+used. At the start of the scope, these elements are processed before any samplers in the same scope.
+
+12) Explain what is a timer in JMeter and what are the types of it?
+
+A JMeter thread by default will send requests continuously without any pause. To get a pause between the request, Timers are used. Some of the 
+Timers used are Constant Timer, Gaussian Random Timer, Synchronizing Timer, Uniform Random Timer and so on.
+
+13) Explain what is Test Fragment?
+
+Test fragment is also a type of element like Thread Group element. The only difference is test fragment is not implemented unless it is 
+referenced by either a Module controller or an Include controller.
+
+14) Explain what is Assertion in JMeter? What are the types of assertion?
+
+Assertion helps to verify that your server under test returns the expected results
+
+Some commonly used Assertion in JMeter are
+
+Response Assertion
+Duration Assertion
+Size Assertion
+XML Assertion
+HTML Assertion
+15) Explain how you can reduce the resource requirement in JMeter?
+
+To reduce the resource requirements in JMeter
+
+Use non-GUI mode: jmeter -n -t test.jmx -l test.jtl
+During the load, a test doesn't use "view results tree" or "view results in table" listeners, use them only during the scripting phase
+Don't use functional mode
+Instead of using lots of similar samplers, use the same sampler in a loop and use the variable to vary the sample
+16) Explain how you can perform spike testing in JMeter?
+
+By synchronizing, timer JMeter spike Testing can be achieved. Synchronizing timer blocks thread until a specific amount of threads has 
+been blocked and then release them all together thus creating large instantaneous load.
+
+17) Explain how you can capture the script of the authentication window in JMeter?
+
+Normally, you can capture script by recording.
+
+First, you have to Threadgroup in Testplan and then make HTTPProxyServer in Workbench
+After that, set port number in the Global Setting box (e.g., 8911) and modify your connection setting in IE as localhost in address 
+8911 as in port Then you can start http proxy server in JMeter and run your application for login
+18) List out few JMeter Listeners?
+
+Some of the JMeter Listeners are
+
+Spline Visualizer
+Aggregate Report
+View Result Tree
+View Result in Table
+Monitor Results
+Distribution Graph
+BeanShell Listener
+Summary Report and so on
+19) What is distributed load testing? How can it be achieved?
+
+Distributed load testing is the process through which numerous systems can be used for simulating a load of a large number of users. 
+By using the master-slave configuration, JMeter can do distribute load testing.
+
+20) In JMeter is it necessary to call embedded resources explicitly?
+
+You can eliminate all embedded resources from being explicitly called. Requests have a checkbox at the bottom that says "retrieve 
+embedded resources." It would grab all CSS, JPG, etc. It is a brilliant way to find resources and broken link in a web App.
+
+21) Explain what is the role of Timer in JMeter?
+
+With the help of a timer, JMeter can delay the time between each request, which a thread makes. It can solve the overload problem 
+of the server.
+
+22) Explain what is Post-processor?
+
+To perform any action after making a request, Post-processor is used. For example, if JMeter sends an HTTP request to the web server,and
+if you want JMeter to stop sending the request if the web server shows an error, then you will use post-processor to perform this action.
+
+
+23) What are the benefits that JMeter offers for performance testing?
+
+JMeter offers benefits on Performance Testing like
+
+It can be used to test performance for both, static resources as well as dynamic resources
+It can handle a maximum number of concurrent users then your website can handle
+It provides the graphical analyses of performance reports
+
+
+
+
+</pre>
+</section>
+<footer class="page1-footer">
+<p id="end"> copyright @ Dilip </p>			<a href="#study" style="color: white;">study</a>
+</footer>
+
+
+</body>
+</html>

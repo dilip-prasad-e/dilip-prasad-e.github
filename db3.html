@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style\style.css">
+<title> Stuff!!! </title>
+</head>
+<body>
+<header class="page1-header">
+<p id="study">
+Study Materials 
+</p> <a href="#end" style="color: white;">end</a>
+</header>
+<section class="page1-section">
+<pre>
+
+<b id="30+ Database Testing Interview Questions And Answers:">30+ Database Testing Interview Questions And Answers:</b>	<a href="https://dilip-prasad-e.github.io/dilip-prasad-e.github.io/index.html">study</a>
+
+We have designed most popular Database Testing Interview Questions And Answers for Experienced as well as Freshers. In this post, you can find Advanced 
+Database testing interview questions for experienced and Database testing interview questions for freshers.
+
+1. What is a Database?
+
+A database is a collection of information in an organized form for faster and better access, storage and manipulation. It can also be defined as a 
+collection of tables, schema, views and other database objects.
+
+2. What is Database Testing?
+
+It is AKA back-end testing or data testing.
+Database testing involves in verifying the integrity of data in the front end with the data present in the back end. It validates the schema, database 
+tables, columns, indexes, stored procedures, triggers, data duplication, orphan records, junk records. It involves in updating records in a database 
+and verifying the same on the front end.
+
+Database testing includes the following:
+
+Data validity testing
+Data integrity testing
+Database performance testing
+Testing of procedures, triggers and functions
+
+3. What are the different types of Database Testing?
+
+DB Testing can be categorized into 3 categories based on the functions and structure of a database.
+
+Structural Database Testing
+Functional Database Testing
+Non-functional Database Testing
+
+4. What are the challenges you faced while performing database testing?
+
+This is one of the popular interview questions on Database Testing.
+
+Some of the challenges are as follows:
+
+Scope of the testing is large
+Scaled down test database
+Changes in database structure
+Complex test plans
+Good understanding of SQL
+
+5. What is the process of database testing?
+
+The process of database testing is as follows:
+
+Setting up an environment
+Run a test
+Verify test results
+Validate actual results and expected results
+Report it to the reporting head
+
+6. What do we usually check in database testing?
+
+In database testing, we usually check the following
+
+Field size validation
+Check constraints
+Check Stored procedures
+Check indexes in terms of verifying performance related issues
+Check the field size defined in the application is matching with that in the database
+
+7. What is data driven test?
+
+Data driven testing is used in the process of testing where we want to pass multiple test data. Generally, we pass different sets of data 
+in our scripts instead of passing hard coded values each time. It helps us to verify the efficiency of the application in handling different inputs.
+
+8. What are the types of data driven testing?
+
+Types of data driven testing are as follows:
+
+Data driven tests through flat files (.txt, .docx)
+Data driven tests through front end objects (list, menu, etc.,)
+Data driven tests through excel sheets or database (.xlsx, .db)
+Data driven tests by keying (through keyboard)
+
+9. What are the steps need to be taken while testing Stored Procedures?
+
+Step 1: In a testing perspective, first we need to understand the requirement of a particular stored procedure.
+
+Step 2: Check whether all the required indexes, updates, deletions, joins are correctly specified in comparing with tables mentioned in the Stored Procedure.
+
+Step 3: Check the procedure calling name, calling parameters and expected responses for different sets of input parameters.
+
+Step 4: Use the database client programs like TOAD, MySQL, or Query Analyzer to run the procedures.
+
+Step 5: Rerun the procedures by passing different parameters and verify the results against expected values.
+
+Step 6: Finally, automate the tests using automation tool.
+
+10. What is a trigger? How do you verify if a trigger is fired or not?
+
+A Trigger is a SQL procedure that initiates an action in response to an event (Insert, Delete or Update) occurs. When a new Employee is added 
+to an Employee_Details table, new records will be created in the relevant tables such as Employee_Payroll, Employee_Time_Sheet etc.,
+
+Triggers in SQL are used to maintain the integrity of the data present in the database. By querying the common audit logs, we can verify whether 
+a trigger is fired or not.
+
+11. How do you verify whether a database is updated when passing the data through front end?
+
+Blackbox testers usually verify whether the data is available or not in the frontend by going through reports or some other screen where the data can be viewable.
+
+If there is no page in the front end to view the data, then there is an option to verify the data in the back end by running SQL queries.
+
+12. What are the steps to test data loading in database testing?
+
+Steps to test data loading in database testing are as follows
+
+Get Source database
+Get Target database
+Compatibility between source and destination database should be checked
+Run the DTS package in the corresponding DTS package
+Compare the columns of source and target database
+Verify the number of rows of source and target database
+Verify whether the changes have been reflected on target database after updating data in the source.
+Verify null values and junk characters
+
+13. What are the necessary things needed for writing database test cases?
+
+To write database test cases, you need to have knowledge on following First step to do this is to know the functional requirement of the application
+
+Next step is to check back end database tables, joins, cursors, triggers, stored procedures, input and output parameters.
+
+14. How to test database manually?
+
+Testing database manually involves verifying the data entered in the front end is available in the back end or not. The same verification 
+process applies for delete, update, insert etc.,
+
+15. How to test procedures and triggers of a database?
+
+To test procedures and triggers of database, we need to have knowledge on input and output parameters. EXEC statement is helpful to run the 
+procedure and examine the behavior of the tables.
+
+Let's see how to test procedures and triggers of a database
+
+Open database project in solution explorer
+Go to view, Click on database schema
+Open the project folder from the schema view menu
+Right click on the object that has to be testing and click on the dialog box say Create Unit Tests
+Create a new language test project
+Choose insert the unit test or create a new test and then click OK
+Project that has to be configured will be done by clicking on the Project Configuration dialog box
+Finally, configure the project and click on OK
+
+16. What is a View?
+
+A view is like a subset of a table which is stored logically in a database. A view is a virtual table. It contains rows and columns similar
+ to a real table. The fields in the view are fields from one or more real tables. Views do not contain data of their own. They are used to 
+ restrict access to the database or to hide data complexity.
+ 
+ 
+ <div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5df46762023d2876996743-1"><span class="crayon-e">CREATE </span><span class="crayon-e">VIEW </span><span class="crayon-e">view_name </span><span class="crayon-st">AS</span><span class="crayon-h"> </span><span class="crayon-e">SELECT </span><span class="crayon-i">column_name1</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-e">column_name2 </span><span class="crayon-e">FROM </span><span class="crayon-e">table_name </span><span class="crayon-e">WHERE </span><span class="crayon-i">CONDITION</span><span class="crayon-sy">;</span></div></div>
+ 
+ 
+ 17. What are the advantages of Views?
+
+Some of the advantages of Views are
+
+Views occupy no space
+Views are used to simply retrieve the results of complicated queries that need to be executed often
+Views are used to restrict access to the database or to hide data complexity
+
+18. What is Normalization?
+
+Normalization is the process of table design to minimize the data redundancy. There are different types of Noramalization forms in SQL.
+
+First Normal Form
+Second Normal Form
+Third Normal Form
+Boyce and Codd Normal Form
+
+19. What is a Join?
+
+Join is a query, which retrieves related columns or rows from multiple tables.
+
+20. What are the different types of joins?
+
+Types of Joins are as follows:
+
+INNER JOIN
+LEFT JOIN
+RIGHT JOIN
+OUTER JOIN
+
+21. What is an Index?
+
+An index is used to speed up the performance of queries. It makes faster retrieval of data from the table. The index can be created on one column or a group of columns.
+
+22. What are the different types of indexes?
+
+Different types of indexes are as follows
+
+B-Tree index
+Bitmap index
+Clustered index
+Covering index
+Non-unique index
+Unique index
+
+23. What is DBMS?
+
+Database Management System is a collection of programs that enables a user to store, retrieve, update and delete information from a database.
+
+24. Which SQL statements can be used in Database Testing?
+
+SQL commands are segregated into following types:
+
+DDL - Data Definition Language
+DML - Data Manipulation Language
+DQL - Data Query Language
+DCL - Data Control Language
+TCL - Transaction Control Language
+
+
+25. What are the different DDL commands in SQL?
+
+DDL commands are used to define or alter the structure of the database.
+
+CREATE: To create databases and database objects
+ALTER: To alter existing database objects
+DROP: To drop databases and databases objects
+TRUNCATE: To remove all records from a table but not its database structure
+RENAME: To rename database objects
+
+26. What are the different DML commands in SQL?
+
+DML commands are used for managing data present in the database.
+
+SELECT: To select specific data from a database
+INSERT: To insert new records into a table
+UPDATE: To update existing records
+DELETE: To delete existing records from a table
+
+27. What are the different DCL commands in SQL?
+
+DCL commands are used to create roles, grant permission and control access to the database objects.
+
+GRANT: To provide user access
+DENY: To deny permissions to users
+REVOKE: To remove user access
+
+28. What are the different TCL commands in SQL?
+
+TCL commands are used to manage the changes made by DML statements.
+
+COMMIT: To write and store the changes to the database
+ROLLBACK: To restore the database since the last commit
+
+29. What is RDBMS?
+
+RDBMS stands for Relational Database Management System. RDBMS is a database management system (DBMS) that is based on the relational model. 
+Data from relational database can be accessed using Structured Query Language (SQL)
+
+30. What are Operators available in SQL?
+
+SQL Operator is a reserved word used primarily in an SQL statement's WHERE clause to perform operations, such as arithmetic operations and comparisons. 
+These are used to specify conditions in an SQL statement.
+
+There are three types of Operators.
+
+Arithmetic Operators
+Comparison Operators
+Logical Operators
+
+
+
+31. What is the difference between Union and Union All command?
+
+This is one of the tricky SQL Interview Questions. Interviewer may ask you this question in another way as what are the advantages of Union All over Union.
+
+
+Both Union and Union All concatenate the result of two tables but the way these two queries handle duplicates are different.
+
+Union: It omits duplicate records and returns only distinct result set of two or more select statements.
+Union All: It returns all the rows including duplicates in the result set of different select statements.
+
+Performance wise Union All is faster than Union, Since Union All doesn't remove duplicates. Union query checks the duplicate values which 
+consumes some time to remove the duplicate records.
+
+Assume: Table1 has 10 records, Table2 has 10 records. Last record from both the tables are same.
+
+If you run Union query.
+
+
+<div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5df46762023dc265569686-1"><span class="crayon-e ">SELECT *</span><span class="crayon-h"> </span><span class="crayon-e">FROM </span><span class="crayon-e">Table1</span></div><div class="crayon-line crayon-striped-line" id="crayon-5df46762023dc265569686-2"><span class="crayon-e">UNION</span></div><div class="crayon-line" id="crayon-5df46762023dc265569686-3"><span class="crayon-e ">SELECT *</span><span class="crayon-h"> </span><span class="crayon-e">FROM </span><span class="crayon-i">Table2</span></div></div>
+
+
+
+Output: Total 19 records
+
+If you run Union ALL query.
+
+<div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5df46762023e3664282715-1"><span class="crayon-e ">SELECT *</span><span class="crayon-h"> </span><span class="crayon-e">FROM </span><span class="crayon-e">Table1</span></div><div class="crayon-line crayon-striped-line" id="crayon-5df46762023e3664282715-2"><span class="crayon-e">UNION </span><span class="crayon-e">ALL</span></div><div class="crayon-line" id="crayon-5df46762023e3664282715-3"><span class="crayon-e ">SELECT *</span><span class="crayon-h"> </span><span class="crayon-e">FROM </span><span class="crayon-i">Table2</span></div></div>
+
+
+Output: Total 20 records
+
+Data type of all the columns in the two tables should be same.
+
+Final words, Hope we have covered common Database Interview Questions and Answers for Experienced as well as Freshers. Bookmark this post "DB 
+Interview Questions And Answers for Experienced" for future reference. After reading this post "Database Interview Questions", if you find that 
+we missed some important Questions, please comment below we would try to include those with answers.
+
+
+
+
+
+
+
+</pre>
+</section>
+<footer class="page1-footer">
+<p id="end"> copyright @ Dilip </p>			<a href="#study" style="color: white;">study</a>
+</footer>
+
+
+</body>
+</html>

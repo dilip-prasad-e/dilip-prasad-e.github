@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style\style.css">
+<title> Stuff!!! </title>
+</head>
+<body>
+<header class="page1-header">
+<p id="study">
+Study Materials 
+</p> <a href="#end" style="color: white;">end</a>
+</header>
+<section class="page1-section">
+<pre>
+
+<b id="Basic & Advanced SQL Interview Questions And Answers:">Basic & Advanced SQL Interview Questions And Answers:</b>	<a href="https://dilip-prasad-e.github.io/dilip-prasad-e.github.io/index.html">study</a>
+
+Congratulations! You got the interview! In this SQL Server Developer Interview Questions post, we have put together both 
+basic and advanced SQL Interview Questions and Answers. This post contains Top SQL Interview Questions for Experienced as 
+well as Freshers.
+
+I have segregated this "SQL Server Interview Questions" post into two types.
+
+1. Common SQL Interview Questions
+2. Practical SQL Query Interview Questions (SQL Server Queries examples with answers).
+
+I don't want to take much time of yours but I couldn't move further without mentioning about this inevitable job interview 
+question which every hiring manager asks you in any interview i.e., Tell Me About Yourself. Answering these questions is very 
+easy if you follow the link. It contains sample answers for both freshers and experienced. Now, Let's move on to the actual post.
+
+General SQL Interview Questions:
+1. What is a Database?
+A database is a collection of information in an organized form for faster and better access, storage and manipulation. It can 
+also be defined as a collection of tables, schema, views, and other database objects.
+
+2. What is Data warehouse?
+Data warehouse refers to a central repository of data from multiple sources of information. Those data are consolidated, 
+transformed and made available for the mining as well as online processing.
+
+3. What is a Table in a Database?
+A table is a database object used to store records in a field in the form of columns and rows that holds data.
+
+4. What is a Field in a Database?
+A field in a Database table is a space allocated to store a particular record within a table.
+
+5. What is a Record in a Database?
+A record (also called a row of data) is an ordered set of related data in a table.
+
+6. What is a column in a Table?
+A column is a vertical entity in a table that contains all information associated with a specific field in a table.
+
+7. What is DBMS?
+Database Management System is a collection of programs that enables a user to store, retrieve, update and delete information 
+from a database.
+
+8. What are the types of DBMS?
+There are two types of DBMS
+1. Relational Database Management System (RDBMS)
+2. Non-Relational Database Management System
+
+9. What is RDBMS?
+RDBMS stands for Relational Database Management System. RDBMS is a database management system (DBMS) that is based on the 
+relational model. Data from a relational database can be accessed using Structured Query Language (SQL)
+
+10. What are the popular Database Management Systems in the IT Industry?
+Oracle, MySQL, Microsoft SQL Server, PostgreSQL, Sybase, MongoDB, DB2, and Microsoft Access etc.,
+
+11. What is SQL?
+SQL Overview: SQL stands for Structured Query Language. It is an American National Standard Institute (ANSI) standard. 
+It is a standard language for accessing and manipulating databases. Using SQL, some of the action we could do are to create 
+databases, tables, stored procedures (SP's), execute queries, retrieve, insert, update, delete data against a database.
+
+12. What are the different types of SQL commands?
+SQL commands are segregated into the following types:
+
+DDL - Data Definition Language
+DML - Data Manipulation Language
+DQL - Data Query Language
+DCL - Data Control Language
+TCL - Transaction Control Language
+
+13. What are the different DDL commands in SQL?
+DDL commands are used to define or alter the structure of the database.
+
+CREATE: To create databases and database objects
+ALTER: To alter existing database objects
+DROP: To drop databases and databases objects
+TRUNCATE: To remove all records from a table but not its database structure
+RENAME: To rename database objects
+14. What are the different DML commands in SQL?
+DML commands are used for managing data present in the database.
+
+SELECT: To select specific data from a database
+INSERT: To insert new records into a table
+UPDATE: To update existing records
+DELETE: To delete existing records from a table
+15. What are the different DCL commands in SQL?
+DCL commands are used to create roles, grant permission and control access to the database objects.
+
+GRANT: To provide user access
+DENY: To deny permissions to users
+REVOKE: To remove user access
+16. What are the different TCL commands in SQL?
+TCL commands are used to manage the changes made by DML statements.
+
+COMMIT: To write and store the changes to the database
+ROLLBACK: To restore the database since the last commit
+17. What is an Index?
+An index is used to speed up the performance of queries. It makes faster retrieval of data from the table. The index can be 
+created on one column or a group of columns.
+
+18. What are all the different types of indexes?
+There are three types of indexes
+1. Unique Index: Unique Indexes helps maintain data integrity by ensuring that no two rows of data in a table have identical 
+key values. A unique index can be applied automatically when a primary key is defined. It ensures that the values in the index
+key columns are unique.
+2. Clustered Index: Clustered Index reorders the physical order of the table and search based on the key values. There will 
+be only one clustered index per table.
+3. Non-Clustered Index: Non-Clustered Index doesn't alter the physical order of the table and maintains a logical order of 
+the data. Each table can have many non-clustered indexes.
+19. What is the difference between Cluster and Non-Cluster Index?
+The difference between the clustered and non-clustered index in SQL is as follows:
+Clustered Index: 
+It is used for easy retrieval of data from the database and it is faster.
+One table can only have one clustered index
+It alters the way records are stored in a database as it sorts out rows by the column which is set to be clustered index.
+Non-Clustered Index: 
+It is slower compared to the Clustered index.
+One table can have multiple non clustered index
+It doesn't alter the way it was sorted but it creates a separate object within a table which points back to the original table 
+rows after searching.
+
+20. What is a View?
+A view is like a subset of a table which is stored logically in a database. A view is a virtual table. It contains rows and 
+columns similar to a real table. The fields in the view are fields from one or more real tables. Views do not contain data of 
+their own. They are used to restrict access to the database or to hide data complexity.
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c8085f137439610-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c8085f137439610-1"><span class="crayon-e">CREATE </span><span class="crayon-e">VIEW </span><span class="crayon-e">view_name </span><span class="crayon-st">AS</span><span class="crayon-h"> </span><span class="crayon-e">SELECT </span><span class="crayon-v">column_name1</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-e">column_name2 </span><span class="crayon-e">FROM </span><span class="crayon-e">table_name </span><span class="crayon-e">WHERE </span><span class="crayon-v">CONDITION</span><span class="crayon-sy">;</span></div></div></td></tr></tbody></table>
+
+21. What are the advantages of Views?
+Some of the advantages of Views are
+
+Views occupy no space
+Views are used to simply retrieve the results of complicated queries that need to be executed often.
+Views are used to restrict access to the database or to hide data complexity.
+22. What is a relationship and what are they?
+Database Relationship is defined as the connection between the tables in a database. There are various database relationships 
+namely
+1. One to One Relationship
+2. One to Many Relationship
+3. Many to One Relationship
+4. Self-Referencing Relationship
+
+23. What is a query?
+A database query is a request for data or information from a database table or combination of tables. A database query can be 
+either a select query or an action query.
+
+24. What is a Subquery? 
+A Subquery is a SQL query within another query. It is a subset of a Select statement whose return values are used in filtering 
+the conditions of the main query.
+
+25. What are the types of subquery?
+There are two types of subquery:
+1. Correlated: In a SQL database query, a correlated subquery is a subquery that uses values from the outer query in order to 
+complete. Because a correlated subquery requires the outer query to be executed first, the correlated subquery must run once 
+for every row in the outer query. It is also known as a synchronized subquery.
+2. Non-Correlated: A Non-correlated subquery is a subquery in which both outer query and inner query are independent to each 
+other.
+
+26. What is Synchronized Subquery?
+Refer Correlated Subquery.
+
+27. What is the difference between Local Variables and Global Variables?
+Local Variables: Local variables can be used or exist only inside the function. These variables are not used or referred by 
+any other functions. These are not known to other functions. Variables can be created whenever that function is called.
+Global Variables: Global variables can be used or exist throughout the program. Same variable declared in global cannot be 
+used in functions. Global variables cannot be created whenever that function is called.
+
+28. What is data Integrity?
+Data integrity defines the accuracy and consistency of the data stored in a database. It also defines integrity constraints to 
+enforce business rules on the data when it is entered into an application or a database.
+
+29. What is Auto Increment in SQL?
+It is one of the important Oracle DBA Interview Questions.
+Auto increment keyword allows the user to create a unique number to get generated when a new record is inserted into a table. 
+Auto increment keyword can be used whenever Primary Key is used.
+
+AUTO INCREMENT keyword is used in Oracle and IDENTITY keyword is used in SQL Server.
+
+30. What is a temp table?
+Ans. A temp table is a temporary storage structure to store the data temporarily.
+
+31. How to avoid duplicate records in a query? 
+The SQL SELECT DISTINCT query is used to return only unique values. It eliminates all the duplicated values.
+
+32. What is the difference between Rename and Alias?
+'Rename' is a permanent name given to a table or column
+'Alias' is a temporary name given to a table or column.
+
+33. What is a Join?
+Join is a query, which retrieves related columns or rows from multiple tables.
+
+34. What are the different types of joins?
+Types of Joins are as follows:
+
+INNER JOIN
+LEFT JOIN
+RIGHT JOIN
+OUTER JOIN
+
+35. What is the difference between an inner and outer join?
+An inner join returns rows when there is at least some matching data between two (or more) tables that are being compared.
+An outer join returns rows from both tables that include the records that are unmatched from one or both the tables.
+
+36. What are SQL constraints?
+SQL constraints are the set of rules that enforced some restriction while inserting, deleting or updating of data in the databases.
+
+37. What are the constraints available in SQL?
+Some of the constraints in SQL are - Primary Key, Foreign Key, Unique Key, SQL Not Null, Default, Check and Index constraint.
+
+38. What is a Unique constraint?
+A unique constraint is used to ensure that there are no duplication values in the field/column.
+
+39. What is a Primary Key?
+A PRIMARY KEY constraint uniquely identifies each record in a database table. All columns participating in a primary key 
+constraint must not contain NULL values.
+
+40. Can a table contain multiple PRIMARY KEY's?
+
+The short answer is no, a table is not allowed to contain multiple primary keys but it allows to have one composite primary 
+key consisting of two or more columns.
+
+41. What is a Composite PRIMARY KEY?
+Composite PRIMARY KEY is a primary key created on more than one column (combination of multiple fields) in a table.
+
+42. What is a FOREIGN KEY?
+A FOREIGN KEY is a key used to link two tables together. A FOREIGN KEY in a table is linked with the PRIMARY KEY of another 
+table.
+
+43. Can a table contain multiple FOREIGN KEY's?
+A table can have many FOREIGN KEY's.
+
+44. What is the difference between UNIQUE and PRIMARY KEY constraints?
+There should be only one PRIMARY KEY in a table whereas there can be any number of UNIQUE Keys.
+PRIMARY KEY doesn't allow NULL values whereas Unique key allows NULL values.
+
+45. What is a NULL value?
+A field with a NULL value is a field with no value. A NULL value is different from a zero value or a field that contains 
+spaces. A field with a NULL value is one that has been left blank during record creation. Assume, there is a field in a 
+table is optional and it is possible to insert a record without adding a value to the optional field then the field will 
+be saved with a NULL value.
+
+46. What is the difference between NULL value, Zero, and Blank space?
+As I mentioned earlier, Null value is field with no value which is different from zero value and blank space.
+Null value is a field with no value.
+Zero is a number
+Blank space is the value we provide. The ASCII value of space is CHAR(32).
+
+47. How to Test for NULL Values?
+A field with a NULL value is a field with no value. NULL value cannot be compared with other NULL values. Hence, It is not 
+possible to test for NULL values with comparison operators, such as =, <, or <>. For this, we have to use the IS NULL and 
+IS NOT NULL operators.
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c8086e945278492-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c8086e945278492-1"><span class="crayon-e">SELECT </span><span class="crayon-e">column_names </span><span class="crayon-e">FROM </span><span class="crayon-e">table_name </span><span class="crayon-e">WHERE </span><span class="crayon-e">column_name </span><span class="crayon-st">IS</span><span class="crayon-h"> </span><span class="crayon-t">NULL</span><span class="crayon-sy">;</span></div></div></td></tr></tbody></table>
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c80872115237391-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c80872115237391-1"><span class="crayon-e">SELECT </span><span class="crayon-e">column_names </span><span class="crayon-e">FROM </span><span class="crayon-e">table_name </span><span class="crayon-e">WHERE </span><span class="crayon-e">column_name </span><span class="crayon-st">IS</span><span class="crayon-h"> </span><span class="crayon-st">NOT</span><span class="crayon-h"> </span><span class="crayon-t">NULL</span><span class="crayon-sy">;</span></div></div></td></tr></tbody></table>
+
+48. What is SQL NOT NULL constraint?
+NOT NULL constraint is used to ensure that the value in the filed cannot be a NULL
+
+49. What is a CHECK constraint?
+A CHECK constraint is used to limit the value that is accepted by one or more columns.
+
+E.g. 'Age' field should contain only the value greater than 18.
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c8087f242340876-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c8087f242340876-1"><span class="crayon-e">CREATE </span><span class="crayon-e">TABLE </span><span class="crayon-e">EMP_DETAILS</span><span class="crayon-sy">(</span><span class="crayon-e">EmpID </span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-st">NOT</span><span class="crayon-h"> </span><span class="crayon-t">NULL</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-e">NAME </span><span class="crayon-e">VARCHAR</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-cn">30</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">NOT</span><span class="crayon-h"> </span><span class="crayon-t">NULL</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-e">Age </span><span class="crayon-t">INT</span><span class="crayon-h"> </span><span class="crayon-e">CHECK</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">AGE</span><span class="crayon-h"> </span><span class="crayon-o">&amp;</span><span class="crayon-v">gt</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-cn">18</span><span class="crayon-sy">)</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-e">PRIMARY </span><span class="crayon-e">KEY</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">EmpID</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div></div></td></tr></tbody></table>
+
+50. What is a DEFAULT constraint?
+DEFAULT constraint is used to include a default value in a column when no value is supplied at the time of inserting a record.
+
+51. What is Normalization?
+Normalization is the process of table design to minimize the data redundancy.
+
+52. What are all the different Normalization? 
+There are different types of Normalization forms in SQL.
+
+First Normal Form (1NF)
+Second Normal Form (2NF)
+Third Normal Form (3NF)
+Boyce and Codd Normal Form (BCNF)
+53. What is Denormalization?
+Denormalization is a database optimization technique used to increase the performance of a database infrastructure. 
+It involves in the process of adding redundant data to one or more tables. In a normalized database, we store data in 
+separate logical tables and attempt to minimize redundant data.
+
+54. What is Stored procedure?
+A Stored Procedure is a collection of SQL statements that have been created and stored in the database to perform a 
+particular task. The stored procedure accepts input parameters and processes them and returns a single value such as a 
+number or text value or a result set (set of rows).
+
+55. What is a Trigger?
+A Trigger is a SQL procedure that initiates an action in response to an event (Insert, Delete or Update) occurs. When a 
+new Employee is added to an Employee_Details table, new records will be created in the relevant tables such as Employee_Payroll, 
+Employee_Time_Sheet etc.,
+
+56. Explain SQL Data Types?
+In SQL Server, each column in a database table has a name and a data type. We need to decide what type of data to store 
+inside each and every column of a table while creating a SQL table.
+
+57. What are the possible values that can be stored in a BOOLEAN data field?
+TRUE and FALSE
+
+58. What is the largest value that can be stored in a BYTE data field?
+The largest number that can be represented in a single byte is 11111111 or 255. The number of possible values is 256 (i.e. 
+255 (the largest possible value) plus 1 (zero), or 28).
+
+59. What are Operators available in SQL?
+SQL Operator is a reserved word used primarily in an SQL statement's WHERE clause to perform operations, such as 
+arithmetic operations and comparisons. These are used to specify conditions in an SQL statement.
+
+There are three types of Operators.
+
+Arithmetic Operators
+Comparison Operators
+Logical Operators
+
+60. Which TCP/IP port does SQL Server run?
+By default, it is 1433
+
+61. List out the ACID properties and explain? 
+Following are the four properties of ACID. These guarantees that the database transactions are processed reliably.
+
+Atomicity
+Consistency
+Isolation
+Durability
+62. Define the SELECT INTO statement.
+The SELECT INTO statement copies data from one table into a new table. The new table will be created with the column-names 
+and types as defined in the old table. You can create new column names using the AS clause.
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c80884847843905-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c80884847843905-1"><span class="crayon-e ">SELECT *</span><span class="crayon-h"> </span><span class="crayon-e">INTO </span><span class="crayon-e">newtable </span><span class="crayon-e">FROM </span><span class="crayon-e">oldtable </span><span class="crayon-e">WHERE </span><span class="crayon-v">condition</span><span class="crayon-sy">;</span></div></div></td></tr></tbody></table>
+
+63. What is the difference between Delete, Truncate and Drop command?
+The difference between the Delete, Truncate and Drop command is
+
+Delete command is a DML command, it is used to delete rows from a table. It can be rolled back.
+Truncate is a DDL command, it is used to delete all the rows from the table and free the space containing the table. It 
+cant be rolled back.
+Drop is a DDL command, it removes the complete data along with the table structure(unlike truncate command that removes only 
+the rows). All the tables' rows, indexes, and privileges will also be removed.
+64. What is the difference between Delete and Truncate?
+The difference between the Delete, and Truncate are
+
+<table id="tablepress-17" class="tablepress tablepress-id-17"><thead><tr class="row-1 odd"><th class="column-1">DELETE</th><th class="column-2">TRUNCATE</th></tr></thead><tbody class="row-hover"><tr class="row-2 even"><td class="column-1">Delete statement is used to delete rows from a table. It can be rolled back.</td><td class="column-2">Truncate statement is used to delete all the rows from the table and free the space containing the table. It cant be rolled back.</td></tr><tr class="row-3 odd"><td class="column-1">We can use WHERE condition in DELETE statement and can delete required rows</td><td class="column-2">We cant use WHERE condition in TRUNCATE statement. So we cant delete required rows alone</td></tr><tr class="row-4 even"><td class="column-1">We can delete specific rows using DELETE</td><td class="column-2">We can only delete all the rows at a time using TRUNCATE</td></tr><tr class="row-5 odd"><td class="column-1">Delete is a DML command</td><td class="column-2">Truncate is a DDL command</td></tr><tr class="row-6 even"><td class="column-1">Delete maintains log and performance is slower than Truncate</td><td class="column-2">Truncate maintains minimal log and performance wise faster</td></tr><tr class="row-7 odd"><td class="column-1">We need DELETE permission on Table to use DELETE command</td><td class="column-2">We need at least ALTER permission on the table to use TRUNCATE command</td></tr></tbody></table>
+
+65. What is the difference between Union and Union All command?
+This is one of the tricky SQL Interview Questions. Interviewer may ask you this question in another way as what are the advantages 
+of Union All over Union.
+
+Both Union and Union All concatenate the result of two tables but the way these two queries handle duplicates are different.
+
+Union: It omits duplicate records and returns only distinct result set of two or more select statements.
+Union All: It returns all the rows including duplicates in the result set of different select statements.
+
+Performance wise Union All is faster than Union, Since Union All doesn't remove duplicates. Union query checks the duplicate 
+values which consumes some time to remove the duplicate records.
+
+Assume: Table1 has 10 records, Table2 has 10 records. Last record from both the tables are same.
+
+If you run Union query.
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c8088a375437131-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c8088a375437131-2">2</div><div class="crayon-num" data-line="crayon-5cba5e6c8088a375437131-3">3</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c8088a375437131-1"><span class="crayon-e ">SELECT *</span><span class="crayon-h"> </span><span class="crayon-e">FROM </span><span class="crayon-e">Table1</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c8088a375437131-2"><span class="crayon-e">UNION</span></div><div class="crayon-line" id="crayon-5cba5e6c8088a375437131-3"><span class="crayon-e ">SELECT *</span><span class="crayon-h"> </span><span class="crayon-e">FROM </span><span class="crayon-v">Table2</span></div></div></td></tr></tbody></table>
+
+Output: Total 19 records
+
+If you run Union query.
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c8088f340331741-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c8088f340331741-2">2</div><div class="crayon-num" data-line="crayon-5cba5e6c8088f340331741-3">3</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c8088f340331741-1"><span class="crayon-e ">SELECT *</span><span class="crayon-h"> </span><span class="crayon-e">FROM </span><span class="crayon-e">Table1</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c8088f340331741-2"><span class="crayon-e">UNION </span><span class="crayon-e">ALL</span></div><div class="crayon-line" id="crayon-5cba5e6c8088f340331741-3"><span class="crayon-e ">SELECT *</span><span class="crayon-h"> </span><span class="crayon-e">FROM </span><span class="crayon-v">Table2</span></div></div></td></tr></tbody></table>
+
+Output: Total 20 records
+
+Data type of all the columns in the two tables should be same.
+
+66. What is CLAUSE in SQL?
+SQL CLAUSE helps to limit the result set by providing a condition to an SQL Query. A CLAUSE helps to filter the rows from the 
+entire set of records. SQL CLAUSES are WHERE & HAVING.
+
+67. What is the difference between Having and Where clause?
+Where clause is used to fetch data from a database that specifies particular criteria whereas a Having clause is used along 
+with 'GROUP BY' to fetch data that meets particular criteria specified by the Aggregate functions. Where clause cannot be used 
+with Aggregate functions, but the Having clause can.
+
+68. What are aggregate functions in SQL?
+SQL aggregate functions return a single value, calculated from values in a column. Some of the aggregate functions in SQL 
+are as follows
+
+AVG() - This function returns the average value
+COUNT() - This function returns the number of rows
+MAX() - This function returns the largest value
+MIN() - This function returns the smallest value
+ROUND() - This function rounds a numeric field to the number of decimals specified
+SUM() - This function returns the sum
+
+69. What are string functions in SQL?
+SQL string functions are used primarily for string manipulation. Some of the widely used SQL string functions are
+
+LEN() - It returns the length of the value in a text field
+LOWER() - It converts character data to lower case
+UPPER() - It converts character data to upper case
+SUBSTRING() - It extracts characters from a text field
+LTRIM() - It is to remove all whitespace from the beginning of the string
+RTRIM() - It is to remove all whitespace at the end of the string
+CONCAT() - Concatenate function combines multiple character strings together
+REPLACE() -  To update the content of a string.
+
+70. What are user defined functions?
+As the name suggests these are written by users as per their requirement. User-defined functions are the functions written 
+to use a logic whenever required.
+
+71. What are all types of user-defined functions?
+There are three types of user-defined function, namely
+. Scalar Functions
+. Inline Table-valued functions
+. Multi-statement valued functions
+
+Scalar functions return unit, variant defined the return clause.
+Inline Table-valued functions and Multi-statement valued functions return table as a return.
+
+72. What is Self-Join?
+A self-join is a join in which a table is joined with itself, especially when the table has a Foreign Key which references 
+its own Primary Key.
+
+73. What is Cross-Join?
+Cross join produces a result set which is the number of rows in the first table multiplied by a number of rows in the 
+second table if no WHERE clause is used along with Cross join. This kind of result is known as Cartesian Product. If 
+suppose, Where clause is used in cross join then the query will work like an Inner join.
+
+74. What is Collation?
+Collation is defined as a set of rules that determine how character data can be sorted as well as compared. Character 
+data is sorted using rules that define the correct character sequence along with options for specifying case-sensitivity, 
+character width, accent marks, kana character types.
+
+75. What are all different types of collation sensitivity?
+Different types of collation sensitivity are as follows
+Case Sensitivity: A and a and B and b.
+Kana Sensitivity: Japanese Kana characters.
+Width Sensitivity: Single byte character and double byte character.
+Accent Sensitivity.
+
+Practical SQL Interview Questions:
+In this part, we will see SQL practice questions which contain both complex SQL queries interview questions and basic SQL 
+Interview Questions. Let's see important SQL queries for interview
+
+76. How to get unique records from a table?
+By using DISTINCT keyword, we can get unique records from a table
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c80894998846063-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c80894998846063-1"><span class="crayon-e">SELECT </span><span class="crayon-e">DISTINCT </span><span class="crayon-v">Col1</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-e">Col2 </span><span class="crayon-e">from </span><span class="crayon-v">Table1</span></div></div></td></tr></tbody></table>
+
+77. What is the command used to fetch the first 5 characters of a string?
+Some of the ways to fetch the first 5 characters of a string are as follows:
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c80899184564002-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c80899184564002-2">2</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c80899184564002-1"><span class="crayon-e">SELECT </span><span class="crayon-e">RIGHT</span><span class="crayon-sy">(</span><span class="crayon-v">EmpName</span><span class="crayon-sy">,</span><span class="crayon-cn">5</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">AS</span><span class="crayon-h"> </span><span class="crayon-e">EmployeeName </span><span class="crayon-e">FROM </span><span class="crayon-e">Employee</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c80899184564002-2"><span class="crayon-e">SELECT </span><span class="crayon-e">SUBSTRING</span><span class="crayon-sy">(</span><span class="crayon-v">EmpName</span><span class="crayon-sy">,</span><span class="crayon-cn">1</span><span class="crayon-sy">,</span><span class="crayon-cn">5</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">AS</span><span class="crayon-h"> </span><span class="crayon-e">EmployeeName </span><span class="crayon-e">FROM </span><span class="crayon-v">Employee</span></div></div></td></tr></tbody></table>
+
+78. How to add new Employee details in an Employee_Details table with the following details
+Employee_Name: John, Salary: 5500, Age: 29?
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c8089c978732918-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c8089c978732918-1"><span class="crayon-e">INSERT </span><span class="crayon-e">into </span><span class="crayon-e">Employee_Details</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">Employee_Name</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">Salary</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">Age</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-e">VALUES</span><span class="crayon-h"> </span><span class="crayon-sy">(</span>'<span class="crayon-i">John</span>'<span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">5500</span>&nbsp;<span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">29</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div></div></td></tr></tbody></table>
+
+
+79. How to add a column 'Salary' to a table Employee_Details?
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c8089e923023846-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c8089e923023846-1"><span class="crayon-e">ALTER </span><span class="crayon-e">TABLE </span><span class="crayon-e">Employee_Details </span><span class="crayon-e">ADD</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">Salary</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div></div></td></tr></tbody></table>
+
+80. How to change a value of the field 'Salary' as 7500 for an Employee_Name 'John' in a table Employee_Details?
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808a1734773846-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808a1734773846-1"><span class="crayon-e">UPDATE </span><span class="crayon-e">Employee_Details </span><span class="crayon-e">set </span><span class="crayon-v">Salary</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">7500</span><span class="crayon-h"> </span><span class="crayon-e">where </span><span class="crayon-v">Employee_Name</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span>'<span class="crayon-i">John</span>'<span class="crayon-sy">;</span></div></div></td></tr></tbody></table>
+
+81. Write an SQL Query to select all records from the table?
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808a4644742274-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808a4644742274-1"><span class="crayon-e ">Select *</span><span class="crayon-h"> </span><span class="crayon-e">from </span><span class="crayon-v">table_name</span><span class="crayon-sy">;</span></div></div></td></tr></tbody></table>
+
+
+82. How To Get List of All Tables From A DataBase?
+To view the tables available on a particular DataBase
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808a6252678761-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808a6252678761-2">2</div><div class="crayon-num" data-line="crayon-5cba5e6c808a6252678761-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808a6252678761-4">4</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808a6252678761-1"><span class="crayon-st">USE</span><span class="crayon-h"> </span><span class="crayon-e">TestDB</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808a6252678761-2"><span class="crayon-e">GO</span></div><div class="crayon-line" id="crayon-5cba5e6c808a6252678761-3"><span class="crayon-e ">SELECT *</span>&nbsp;<span class="crayon-e">FROM </span><span class="crayon-v">sys</span><span class="crayon-sy">.</span><span class="crayon-e">Tables</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808a6252678761-4"><span class="crayon-v">GO</span></div></div></td></tr></tbody></table>
+
+83. Define SQL Delete statement.
+The SQL Delete statement is used to delete records from a table.
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808ab730863357-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808ab730863357-1"><span class="crayon-e">DELETE </span><span class="crayon-e">FROM </span><span class="crayon-e">table_name </span><span class="crayon-e">WHERE </span><span class="crayon-v">some_column</span><span class="crayon-o">=</span><span class="crayon-v">some_value</span><span class="crayon-sy">;</span></div></div></td></tr></tbody></table>
+
+84. Write the command to remove all Players named Sachin from the Players table.
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808ad603516104-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808ad603516104-1"><span class="crayon-e">DELETE </span><span class="crayon-e">from </span><span class="crayon-e">Players </span><span class="crayon-e">WHERE </span><span class="crayon-v">Player_Name</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span>'<span class="crayon-i">Sachin</span>'</div></div></td></tr></tbody></table>
+
+85. How to fetch values from TestTable1 that are not in TestTable2 without using NOT keyword?
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808b0874817351-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808b0874817351-2">2</div><div class="crayon-num" data-line="crayon-5cba5e6c808b0874817351-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808b0874817351-4">4</div><div class="crayon-num" data-line="crayon-5cba5e6c808b0874817351-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808b0874817351-6">6</div><div class="crayon-num" data-line="crayon-5cba5e6c808b0874817351-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808b0874817351-8">8</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808b0874817351-1"><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808b0874817351-2"><span class="crayon-o">|</span><span class="crayon-h"> </span><span class="crayon-v">TestTable1</span><span class="crayon-h"> </span><span class="crayon-o">|</span></div><div class="crayon-line" id="crayon-5cba5e6c808b0874817351-3"><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808b0874817351-4"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-cn">11</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-o">|</span></div><div class="crayon-line" id="crayon-5cba5e6c808b0874817351-5"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-cn">12</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-o">|</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808b0874817351-6"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-cn">13</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-o">|</span></div><div class="crayon-line" id="crayon-5cba5e6c808b0874817351-7"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-cn">14</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-o">|</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808b0874817351-8"><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span></div></div></td></tr></tbody></table>
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808b2209134948-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808b2209134948-2">2</div><div class="crayon-num" data-line="crayon-5cba5e6c808b2209134948-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808b2209134948-4">4</div><div class="crayon-num" data-line="crayon-5cba5e6c808b2209134948-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808b2209134948-6">6</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808b2209134948-1"><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808b2209134948-2"><span class="crayon-o">|</span><span class="crayon-h"> </span><span class="crayon-v">TestTable2</span><span class="crayon-h"> </span><span class="crayon-o">|</span></div><div class="crayon-line" id="crayon-5cba5e6c808b2209134948-3"><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808b2209134948-4"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-cn">11</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-o">|</span></div><div class="crayon-line" id="crayon-5cba5e6c808b2209134948-5"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-cn">12</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-o">|</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808b2209134948-6"><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span></div></div></td></tr></tbody></table>
+
+By using the except keyword
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808b5447971732-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808b5447971732-1"><span class="crayon-e ">SELECT *</span><span class="crayon-h"> </span><span class="crayon-e">FROM </span><span class="crayon-e">TestTable1 </span><span class="crayon-e">EXCEPT </span><span class="crayon-e ">SELECT *</span><span class="crayon-h"> </span><span class="crayon-e">FROM </span><span class="crayon-v">TestTable2</span><span class="crayon-sy">;</span></div></div></td></tr></tbody></table>
+
+86. How to get each name only once from an employee table?
+By using the DISTINCT keyword, we could get each name only once.
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808b8792622207-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808b8792622207-1"><span class="crayon-e">SELECT </span><span class="crayon-e">DISTINCT </span><span class="crayon-e">employee_name </span><span class="crayon-e">FROM </span><span class="crayon-v">employee_table</span><span class="crayon-sy">;</span></div></div></td></tr></tbody></table>
+
+87. How to rename a column in the output of SQL query?
+By using SQL AS keyword
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808ba019968394-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808ba019968394-1"><span class="crayon-e">SELECT </span><span class="crayon-e">column_name </span><span class="crayon-st">AS</span><span class="crayon-h"> </span><span class="crayon-e">new_name </span><span class="crayon-e">FROM </span><span class="crayon-v">table_name</span><span class="crayon-sy">;</span></div></div></td></tr></tbody></table>
+
+88. What is the order of SQL SELECT?
+Order of SQL SELECT statement is as follows
+
+SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY.
+
+89. How to display the current date in SQL?
+
+In SQL, there is a built-in function called GetDate() which helps to return the current date.
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808bd012908650-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808bd012908650-1"><span class="crayon-e">SELECT </span><span class="crayon-e">GetDate</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div></div></td></tr></tbody></table>
+
+90. Write an SQL Query to find an Employee_Name whose Salary is equal or greater than 5000 from the below table Employee_Details.
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808c0251688644-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808c0251688644-2">2</div><div class="crayon-num" data-line="crayon-5cba5e6c808c0251688644-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808c0251688644-4">4</div><div class="crayon-num" data-line="crayon-5cba5e6c808c0251688644-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808c0251688644-6">6</div><div class="crayon-num" data-line="crayon-5cba5e6c808c0251688644-7">7</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808c0251688644-1"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Employee_Name</span><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Salary</span><span class="crayon-o">|</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808c0251688644-2"><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">-</span></div><div class="crayon-line" id="crayon-5cba5e6c808c0251688644-3"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">John</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-cn">2500</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">|</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808c0251688644-4"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Emma</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-cn">3500</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">|</span></div><div class="crayon-line" id="crayon-5cba5e6c808c0251688644-5"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Mark</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-cn">5500</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">|</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808c0251688644-6"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Anne</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-cn">6500</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">|</span></div><div class="crayon-line" id="crayon-5cba5e6c808c0251688644-7"><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">-</span></div></div></td></tr></tbody></table>
+
+Syntax:
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808c2867084412-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808c2867084412-1"><span class="crayon-e">SELECT </span><span class="crayon-e">Employee_Name </span><span class="crayon-e">FROM </span><span class="crayon-e">Employee_Details </span><span class="crayon-e">WHERE </span><span class="crayon-v">Salary</span><span class="crayon-o">&gt;=</span><span class="crayon-cn">5000</span><span class="crayon-sy">;</span></div></div></td></tr></tbody></table>
+
+Output:
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808c5066427839-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808c5066427839-2">2</div><div class="crayon-num" data-line="crayon-5cba5e6c808c5066427839-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808c5066427839-4">4</div><div class="crayon-num" data-line="crayon-5cba5e6c808c5066427839-5">5</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808c5066427839-1"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Employee_Name</span><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Salary</span><span class="crayon-o">|</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808c5066427839-2"><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">-</span></div><div class="crayon-line" id="crayon-5cba5e6c808c5066427839-3"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Mark</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-cn">5500</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">|</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808c5066427839-4"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Anne</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-cn">6500</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">|</span></div><div class="crayon-line" id="crayon-5cba5e6c808c5066427839-5"><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">-</span></div></div></td></tr></tbody></table>
+
+91. Write an SQL Query to find list of Employee_Name start with 'E' from the below table
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808c7197871287-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808c7197871287-2">2</div><div class="crayon-num" data-line="crayon-5cba5e6c808c7197871287-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808c7197871287-4">4</div><div class="crayon-num" data-line="crayon-5cba5e6c808c7197871287-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808c7197871287-6">6</div><div class="crayon-num" data-line="crayon-5cba5e6c808c7197871287-7">7</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808c7197871287-1"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Employee_Name</span><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Salary</span><span class="crayon-o">|</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808c7197871287-2"><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">-</span></div><div class="crayon-line" id="crayon-5cba5e6c808c7197871287-3"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">John</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-cn">2500</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">|</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808c7197871287-4"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Emma</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-cn">3500</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">|</span></div><div class="crayon-line" id="crayon-5cba5e6c808c7197871287-5"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Mark</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-cn">5500</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">|</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808c7197871287-6"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Anne</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-cn">6500</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">|</span></div><div class="crayon-line" id="crayon-5cba5e6c808c7197871287-7"><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">-</span></div></div></td></tr></tbody></table>
+
+Syntax:
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808ca206231441-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808ca206231441-1"><span class="crayon-e ">SELECT *</span><span class="crayon-h"> </span><span class="crayon-e">FROM </span><span class="crayon-e">Employee_Details </span><span class="crayon-e">WHERE </span><span class="crayon-e">Employee_Name </span><span class="crayon-i">like</span><span class="crayon-h"> </span><span class="crayon-s">'E%'</span><span class="crayon-sy">;</span></div></div></td></tr></tbody></table>
+
+Output:
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808cc020105004-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808cc020105004-2">2</div><div class="crayon-num" data-line="crayon-5cba5e6c808cc020105004-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808cc020105004-4">4</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808cc020105004-1"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Employee_Name</span><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Salary</span><span class="crayon-o">|</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808cc020105004-2"><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">-</span></div><div class="crayon-line" id="crayon-5cba5e6c808cc020105004-3"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Emma</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-cn">3500</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">|</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808cc020105004-4"><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">-</span></div></div></td></tr></tbody></table>
+
+92. Write SQL SELECT query that returns the FirstName and LastName from Employee_Details table.
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808cf688272127-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808cf688272127-1"><span class="crayon-e">SELECT </span><span class="crayon-v">FirstName</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-e">LastName </span><span class="crayon-e">FROM </span><span class="crayon-v">Employee_Details</span><span class="crayon-sy">;</span></div></div></td></tr></tbody></table>
+
+93. How to rename a Table?
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808d2585137765-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808d2585137765-1"><span class="crayon-e">SP_RENAME </span><span class="crayon-i">TABLE</span><span class="crayon-h"> </span><span class="crayon-s">'SCOREBOARD'</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-s">'OVERALLSCORE'</span></div></div></td></tr></tbody></table>
+
+To rename Table Name & Column Name
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808d6831084583-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808d6831084583-2">2</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808d6831084583-1"><span class="crayon-e">sp_rename </span><span class="crayon-v">OldTableName</span><span class="crayon-sy">,</span><span class="crayon-e">NewTableName</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808d6831084583-2"><span class="crayon-v">sp</span><span class="crayon-sy">_</span>rename<span class="crayon-h"> </span><span class="crayon-s">'TableName.OldColumnName'</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-s">'NewColumnName'</span></div></div></td></tr></tbody></table>
+
+94. How to select all the even number records from a table? 
+To select all the even number records from a table:
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808d8831901337-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808d8831901337-2">2</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808d8831901337-1"><span class="crayon-e ">Select *</span><span class="crayon-h"> </span><span class="crayon-e">from </span><span class="crayon-e">table </span><span class="crayon-e">where </span><span class="crayon-v">id</span><span class="crayon-h"> </span><span class="crayon-o">%</span><span class="crayon-h"> </span><span class="crayon-cn">2</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808d8831901337-2">&nbsp;</div></div></td></tr></tbody></table>
+
+95. How to select all the odd number records from a table? 
+To select all the odd number records from a table:
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808db535167844-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808db535167844-1"><span class="crayon-e ">Select *</span><span class="crayon-h"> </span><span class="crayon-e">from </span><span class="crayon-e">table </span><span class="crayon-e">where </span><span class="crayon-v">id</span><span class="crayon-h"> </span><span class="crayon-o">%</span><span class="crayon-h"> </span><span class="crayon-cn">2</span><span class="crayon-h"> </span><span class="crayon-o">!=</span><span class="crayon-h"> </span><span class="crayon-cn">0</span></div></div></td></tr></tbody></table>
+
+96. What is the SQL CASE statement?
+SQL Case statement allows embedding an if-else like clause in the SELECT statement.
+
+97. Can you display the result from the below table TestTable based on the criteria M,m as M and F, f as F and Null as N and 
+g, k, I as U
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808de623858174-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808de623858174-1"><span class="crayon-e">SELECT </span><span class="crayon-e">Gender </span><span class="crayon-e">from </span><span class="crayon-v">TestTable</span></div></div></td></tr></tbody></table>
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808e0231370957-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808e0231370957-2">2</div><div class="crayon-num" data-line="crayon-5cba5e6c808e0231370957-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808e0231370957-4">4</div><div class="crayon-num" data-line="crayon-5cba5e6c808e0231370957-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808e0231370957-6">6</div><div class="crayon-num" data-line="crayon-5cba5e6c808e0231370957-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808e0231370957-8">8</div><div class="crayon-num" data-line="crayon-5cba5e6c808e0231370957-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808e0231370957-10">10</div><div class="crayon-num" data-line="crayon-5cba5e6c808e0231370957-11">11</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808e0231370957-1"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Gender</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">|</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808e0231370957-2"><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span></div><div class="crayon-line" id="crayon-5cba5e6c808e0231370957-3"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-v">M</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808e0231370957-4"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-v">F</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span></div><div class="crayon-line" id="crayon-5cba5e6c808e0231370957-5"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-t">NULL</span><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-o">|</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808e0231370957-6"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-v">m</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span></div><div class="crayon-line" id="crayon-5cba5e6c808e0231370957-7"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-v">f</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808e0231370957-8"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-v">g</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-5cba5e6c808e0231370957-9"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-v">H</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808e0231370957-10"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-v">i</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-5cba5e6c808e0231370957-11"><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span></div></div></td></tr></tbody></table>
+
+By using the below syntax we could achieve the output as required.
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808e3618910384-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808e3618910384-2">2</div><div class="crayon-num" data-line="crayon-5cba5e6c808e3618910384-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808e3618910384-4">4</div><div class="crayon-num" data-line="crayon-5cba5e6c808e3618910384-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808e3618910384-6">6</div><div class="crayon-num" data-line="crayon-5cba5e6c808e3618910384-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808e3618910384-8">8</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808e3618910384-1"><span class="crayon-e">SELECT </span><span class="crayon-v">Gender</span><span class="crayon-sy">,</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808e3618910384-2"><span class="crayon-st">case</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-5cba5e6c808e3618910384-3"><span class="crayon-e">when </span><span class="crayon-v">Gender</span><span class="crayon-o">=</span><span class="crayon-s">'i'</span><span class="crayon-h"> </span><span class="crayon-st">then</span><span class="crayon-h"> </span><span class="crayon-s">'U'</span><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808e3618910384-4"><span class="crayon-e">when </span><span class="crayon-v">Gender</span><span class="crayon-o">=</span><span class="crayon-s">'g'</span><span class="crayon-h"> </span><span class="crayon-st">then</span><span class="crayon-h"> </span><span class="crayon-s">'U'</span></div><div class="crayon-line" id="crayon-5cba5e6c808e3618910384-5"><span class="crayon-e">when </span><span class="crayon-v">Gender</span><span class="crayon-o">=</span><span class="crayon-s">'H'</span><span class="crayon-h"> </span><span class="crayon-st">then</span><span class="crayon-h"> </span><span class="crayon-s">'U'</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808e3618910384-6"><span class="crayon-e">when </span><span class="crayon-v">Gender</span><span class="crayon-o">=</span><span class="crayon-s">'NULL'</span><span class="crayon-h"> </span><span class="crayon-st">then</span><span class="crayon-h"> </span><span class="crayon-s">'N'</span></div><div class="crayon-line" id="crayon-5cba5e6c808e3618910384-7"><span class="crayon-st">else</span><span class="crayon-h"> </span><span class="crayon-e">upper</span><span class="crayon-sy">(</span><span class="crayon-v">Gender</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808e3618910384-8"><span class="crayon-st">end</span><span class="crayon-h"> </span><span class="crayon-st">as</span><span class="crayon-h"> </span><span class="crayon-e">newgender </span><span class="crayon-e">from </span><span class="crayon-e">TestTable </span><span class="crayon-e">GROUP </span><span class="crayon-e">BY </span><span class="crayon-v">Gender</span></div></div></td></tr></tbody></table>
+
+98. What will be the result of the query below?
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808e5234969746-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808e5234969746-1"><span class="crayon-e">select </span><span class="crayon-st">case</span><span class="crayon-h"> </span><span class="crayon-e">when </span><span class="crayon-t">null</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-t">null</span><span class="crayon-h"> </span><span class="crayon-st">then</span><span class="crayon-h"> </span><span class="crayon-s">'True'</span><span class="crayon-h"> </span><span class="crayon-st">else</span><span class="crayon-h"> </span><span class="crayon-s">'False'</span><span class="crayon-h"> </span><span class="crayon-st">end</span><span class="crayon-h"> </span><span class="crayon-st">as</span><span class="crayon-h"> </span><span class="crayon-v">Result</span><span class="crayon-sy">;</span></div></div></td></tr></tbody></table>
+
+This query returns "False". In the above question, we could see null = null is not the proper way to compare a null value. 
+To compare a value with null, we use IS operator in SQL.
+
+So the correct way is as follows
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808e8390543788-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808e8390543788-1"><span class="crayon-e">select </span><span class="crayon-st">case</span><span class="crayon-h"> </span><span class="crayon-e">when </span><span class="crayon-t">null</span><span class="crayon-h"> </span><span class="crayon-st">is</span><span class="crayon-h"> </span><span class="crayon-t">null</span><span class="crayon-h"> </span><span class="crayon-st">then</span><span class="crayon-h"> </span><span class="crayon-s">'True'</span><span class="crayon-h"> </span><span class="crayon-st">else</span><span class="crayon-h"> </span><span class="crayon-s">'False'</span><span class="crayon-h"> </span><span class="crayon-st">end</span><span class="crayon-h"> </span><span class="crayon-st">as</span><span class="crayon-h"> </span><span class="crayon-v">Result</span><span class="crayon-sy">;</span></div></div></td></tr></tbody></table>
+
+99. What will be the result of the query below? 
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808ea534114191-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808ea534114191-1"><span class="crayon-e">select </span><span class="crayon-st">case</span><span class="crayon-h"> </span><span class="crayon-e">when </span><span class="crayon-t">null</span><span class="crayon-h"> </span><span class="crayon-st">is</span><span class="crayon-h"> </span><span class="crayon-t">null</span><span class="crayon-h"> </span><span class="crayon-st">then</span><span class="crayon-h"> </span><span class="crayon-s">'Queries In SQL Server'</span><span class="crayon-h"> </span><span class="crayon-st">else</span><span class="crayon-h"> </span><span class="crayon-s">'Queries In MySQL'</span><span class="crayon-h"> </span><span class="crayon-st">end</span><span class="crayon-h"> </span><span class="crayon-st">as</span><span class="crayon-h"> </span><span class="crayon-v">Result</span><span class="crayon-sy">;</span></div></div></td></tr></tbody></table>
+
+This query will returns "Queries In SQL Server".
+
+100. How do you update F as M and M as F from the below table TestTable?
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808ed590355513-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808ed590355513-2">2</div><div class="crayon-num" data-line="crayon-5cba5e6c808ed590355513-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808ed590355513-4">4</div><div class="crayon-num" data-line="crayon-5cba5e6c808ed590355513-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cba5e6c808ed590355513-6">6</div><div class="crayon-num" data-line="crayon-5cba5e6c808ed590355513-7">7</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808ed590355513-1"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Name</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Gender</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">|</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808ed590355513-2"><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span></div><div class="crayon-line" id="crayon-5cba5e6c808ed590355513-3"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">John</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-v">M</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808ed590355513-4"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Emma</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-v">F</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span></div><div class="crayon-line" id="crayon-5cba5e6c808ed590355513-5"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Mark</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-v">M</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cba5e6c808ed590355513-6"><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">Anne</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-v">F</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">|</span></div><div class="crayon-line" id="crayon-5cba5e6c808ed590355513-7"><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span><span class="crayon-o">--</span></div></div></td></tr></tbody></table>
+
+By using the below syntax we could achieve the output as required.
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808ef357221414-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808ef357221414-1"><span class="crayon-e">UPDATE </span><span class="crayon-e">TestTable </span><span class="crayon-e">SET </span><span class="crayon-v">Gender</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-st">CASE</span><span class="crayon-h"> </span><span class="crayon-e">Gender </span><span class="crayon-i">WHEN</span><span class="crayon-h"> </span><span class="crayon-s">'F'</span><span class="crayon-h"> </span><span class="crayon-st">THEN</span><span class="crayon-h"> </span><span class="crayon-s">'M'</span><span class="crayon-h"> </span><span class="crayon-st">ELSE</span><span class="crayon-h"> </span><span class="crayon-s">'F'</span><span class="crayon-h"> </span><span class="crayon-st">END</span></div></div></td></tr></tbody></table>
+
+101. Describe SQL comments?
+Single Line Comments: Single line comments start with two consecutive hyphens (-) and ended by the end of the line
+Multi-Line Comments: Multi-line comments start with /* and end with */. Any text between /* and */ will be ignored.
+
+102. What is the difference between NVL function, IFNULL function, and ISNULL function?
+These three functions work in the same way. These functions are used to replace NULL value with another value. Oracle 
+developers use NVL function, MySQL developers use IFNULL function and SQL Server developers use ISNULL function.
+Assume, some of the values in a column are NULL.
+If you run below statement, you will get result as NULL
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808f2548504674-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808f2548504674-1"><span class="crayon-e">SELECT </span><span class="crayon-e ">col1 *</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">col2</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-v">col3</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-e">FROM </span><span class="crayon-v">Table1</span></div></div></td></tr></tbody></table>
+
+
+Suppose any of the value in col3 is NULL then as I said your result will be NULL.
+
+To overcome this we use NVL() function, IFNULL() function, ISNULL() Function.
+
+ORACLE:
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808f5308971280-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808f5308971280-1"><span class="crayon-e">SELECT </span><span class="crayon-e ">col1 *</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">col2</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-e">NVL</span><span class="crayon-sy">(</span><span class="crayon-v">col3</span><span class="crayon-sy">,</span><span class="crayon-cn">0</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-e">FROM </span><span class="crayon-v">Table1</span></div></div></td></tr></tbody></table>
+
+MySQL:
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808f9959699021-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808f9959699021-1"><span class="crayon-e">SELECT </span><span class="crayon-e ">col1 *</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">col2</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-e">IFNULL</span><span class="crayon-sy">(</span><span class="crayon-v">col3</span><span class="crayon-sy">,</span><span class="crayon-cn">0</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-e">FROM </span><span class="crayon-v">Table1</span></div></div></td></tr></tbody></table>
+
+Also, you can use the COALESCE() function
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808fc125043210-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808fc125043210-1"><span class="crayon-e">SELECT </span><span class="crayon-e ">col1 *</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">col2</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-e">COALESCE</span><span class="crayon-sy">(</span><span class="crayon-v">col3</span><span class="crayon-sy">,</span><span class="crayon-cn">0</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-e">FROM </span><span class="crayon-v">Table1</span></div></div></td></tr></tbody></table>
+
+SQL Server:
+
+<table class="crayon-table" style=""><tbody><tr class="crayon-row"><td class="crayon-nums " data-settings="show"><div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5cba5e6c808fe974285955-1">1</div></div></td><td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5cba5e6c808fe974285955-1"><span class="crayon-e">SELECT </span><span class="crayon-e ">col1 *</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">col2</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-e">ISNULL</span><span class="crayon-sy">(</span><span class="crayon-v">col3</span><span class="crayon-sy">,</span><span class="crayon-cn">0</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-e">FROM </span><span class="crayon-v">Table1</span></div></div></td></tr></tbody></table>
+
+103. What is Database Testing?
+It is AKA back-end testing or data testing.
+Database testing involves in verifying the integrity of data in the front end with the data present in the back end. 
+It validates the schema, database tables, columns, indexes, stored procedures, triggers, data duplication, orphan records, 
+junk records. It involves in updating records in a database and verifying the same on the front end.
+
+104. What is the difference between GUI Testing and Database Testing?
+
+GUI Testing is AKA User Interface Testing or Front-end testing
+Database Testing is AKA back-end testing or data testing.
+GUI Testing deals with all the testable items that are open to the user to interaction such as Menus, Forms etc.
+Database Testing deals with all the testable items that are generally hidden from the user.
+The tester who is performing GUI Testing doesn't need to know Structured Query Language
+The tester who is performing Database Testing needs to know Structured Query Language
+GUI Testing includes invalidating the text boxes, check boxes, buttons, drop-downs, forms etc., majorly the look and feel 
+of the overall application
+Database Testing involves in verifying the integrity of data in the front end with the data present in the back end. It 
+validates the schema, database tables, columns, indexes, stored procedures, triggers, data duplication, orphan records, 
+junk records. It involves in updating records in a database and verifying the same on the front end.
+Final words Hope we have covered complex SQL Interview Questions and Answers for Experienced as well as Freshers. Bookmark 
+this post "SQL Interview Questions And Answers for Experienced" for future reference. After reading this post "SQL Interview 
+Questions", if you find that we missed some important SQL Server Interview Questions, please comment below we would try to 
+include those with answers.
+
+Note: Most of my readers are asking me to write SQL Interview Questions for testers. If you are a Software QA, there is no 
+point of learning separate SQL server query interview questions. This post covers everything for both Developers as well as 
+Testers.
+
+
+
+
+</pre>
+</section>
+<footer class="page1-footer">
+<p id="end"> copyright @ Dilip </p>			<a href="#study" style="color: white;">study</a>
+</footer>
+
+
+</body>
+</html>
