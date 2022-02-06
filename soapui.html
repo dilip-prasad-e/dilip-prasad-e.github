@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style\style.css">
+<title> Stuff!!! </title>
+</head>
+<body>
+<header class="page1-header">
+<p id="study">
+Study Materials 
+</p> <a href="#end" style="color: white;">end</a>
+</header>
+<section class="page1-section">
+<pre>
+
+<b id="GN__SOAPUI_interview_questions:">GN__SOAPUI_interview_questions:</b>	<a href="https://dilip-prasad-e.github.io/dilip-prasad-e.github.io/interview_materials_api.html">Interview Preparation Materials api</a>
+
+1) Explain what is SOAP UI?
+
+SOAP UI is a free, open source cross-platform functional Testing solution.  It enables you to rapidly and easily create 
+and execute automated regression, compliance, functional and load tests. Its used for Web Services Testing
+
+2) Explain what is the role of XML, SOAP, WSDL and UDDI in web services?
+
+Web services are a medium through which web based application can be integrated or communicated over an internet protocol backbone. 
+Web based application can be integrated using XML, SOAP, UDDI and WSDL. SOAP is used for transmitting the data; WSDL is used for 
+describing or relating the services, UDDI is used for listing what services are accessible, XML is used to tag the data.
+
+3) Mention what SoapUI can do?
+
+SoapUI can-
+
+It can do automated testing like load tests, scenario-based tests and data driven tests
+It has got built-in reporting abilities
+It has got unique ability to impersonate Web services and run functional and load test against them even before they are executed
+4) Mention how SoapUI is used to structure functional tests?
+
+SOAP UI uses three levels to structure functional tests
+
+TestSuite: It is a pool of test cases used for combining functional tests into logical units
+TestCase: It is a group of test steps that are bring together to test some specific aspect of your services. You can augment any 
+number of testcases to test suites
+TestSteps: They are "building blocks" of functional tests in SOAPUI. They together makes TestCase and determines the flow of execution 
+of the service to be tested
+5) Mention what is the difference between REST and SOAP?
+
+SOAP: Soap stands for Simple Object Access Protocol and it is a protocol used for receiving and sending data over HTTP as XML
+REST: It is a way of designing a web services.
+6) Explain what is the properties in SoapUI?
+
+Properties in SOAPUI is used to retrieve and store data.  The data is stored as key, value or format.
+
+7) Explain where you use properties in SoapUI?
+
+We can read the property values into test step endpoint, username, header values, password, domain, POST, PUT, GET and DELETE method properties.
+
+8) Mention what languages does SoapUI use?
+
+SOAP UI supports two language, Groovy, and JavaScript.
+
+9) Mention what are the default properties in SOAPUI?
+
+By default, SOAPUI has properties at three levels
+
+Project level default or custom properties: User can append any number of properties at project level and it can be opened from 
+any test steps from any test cases under any test suites
+Test suite level default or custom properties: User can append any number properties at test suite level and it can be used from 
+any test steps from any test cases under this test suite
+Test case level default or custom properties: At Test Case level users can add any number properties at test case level and it 
+can be used from any test steps from this test case
+10) Explain how you can parameterize the endpoints in SOAP UI?
+
+To parameterize the endpoints in SOAP UI is most important as it is the first step in Automation Testing.  It is more time consuming 
+for changing endpoints manually.  In order to do that
+
+Define a project property holding the endpoint
+Change the endpoint to use this property via property expansion
+Ensure that your requests are availing the configured endpoint
+When a request is run, the property will inevitably be with its current value. To use a different value just configure the endpoint 
+in the UI, you can use the P option from the command line
+11) Mention what is the general format for reading the custom or default property value?
+
+The general format for reading the custom or default property value is ${#levelname#key}
+
+12) Inside the SOAPUI where groovy script can be used?
+
+Inside the SOAPUI groovy script can be used in two places
+
+Groovy script test step
+Script Assertion- within test step
+13) Mention some important functionalities of SOAP UI?
+
+Some important functionalities of SOAP UI are:
+
+It creates a new project using only the web service WSDL link; it will get the information of all methods and import them automatically
+It creates test cases directly from the web method request
+It tests web methods in combination or separately. It has a very useful capability which allows datas and parameters to be passed from 
+one method to another.  It enables you to save data in variables so other methods can access it
+It enables creating validations on the web method results through assertions; the assertion can be created either in X-path or X-query
+It helps in creating other types of validations like schema compliance, soap fault, response time etc.
+It enables organizing the test cases in test suites
+It enables running all test cases from a test suite and getting fail/pass results for each test case
+It enables parameterization of the test cases request fields so that a test case can avail different values from a table or database
+Using groovy it enables creating complex validation scripts
+It has some support for web service Load Testing
+It has some support for testing coverage and requirements management
+14) Explain what assertion is in Soap UI is and give some example of assertion possible in SOAPUI?
+
+In SOAP UI assertion functionality is used to validate the response of request received by the Test Steps at the time of execution.  
+It is used to compare a part of message to some expected value.
+
+Assertion types in SOAPUI includes
+
+Simple contains
+Schema compliance
+Simple not contains
+Soap Faults
+Response SLA
+XPath Match
+XQuery Match
+WS security status
+Script Assertion
+WS- Addressing Request or Response Assertion
+15) Does SoapUI support SSL Authentication
+
+Yes
+
+
+
+
+
+</pre>
+</section>
+<footer class="page1-footer">
+<p id="end"> copyright @ Dilip </p>			<a href="#study" style="color: white;">study</a>
+</footer>
+
+
+</body>
+</html>
