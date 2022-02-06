@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style\style.css">
+<title> Stuff!!! </title>
+</head>
+<body>
+<header class="page1-header">
+<p id="study">
+Study Materials 
+</p> <a href="#end" style="color: white;">end</a>
+</header>
+<section class="page1-section">
+<pre>
+
+<b id="GN__Appium_interview_questions:">GN__Appium_interview_questions:</b>	<a href="https://dilip-prasad-e.github.io/dilip-prasad-e.github.io/index.html" class="button" type="submit">study</a>
+
+1) Explain what is Appium?
+
+Appium is a freely distributed open source mobile application UI Testing framework.
+
+2) List out the Appium abilities?
+
+Appium abilities are
+
+Test Web
+Provides cross-platform for Native and Hybrid mobile automation
+Support JSON wire protocol
+It does not require recompilation of App
+Support automation test on physical device as well as similar or emulator both
+It has no dependency on mobile device
+3) List out the pre-requisite to use APPIUM?
+
+Pre-requisite to use APPIUM is
+
+ANDROID SDK
+JDK
+TestNG
+Eclipse
+Selenium Server JAR
+Webdriver Language Binding Library
+APPIUM for Windows
+APK App Info On Google Play
+js
+4) List out the limitations of using Appium?
+
+Appium does not support testing of Android Version lower than 4.2
+Limited support for hybrid app testing. E.g., not possible to test the switching action of application from the web app to 
+native and vice-versa
+No support to run Appium Inspector on Microsoft Windows
+5) Explain how to find DOM element or xPath in a mobile application?
+
+To find the DOM element use "UIAutomateviewer" to find DOM element for Android application.
+
+6) Explain the design concept of Appium?
+
+Appium is an "HTTP Server" written using Node.js platform and drives iOS and Android session using Webdriver JSON wire protocol. 
+Hence, before initializing the Appium Server, Node.js must be pre-installed on the system
+When Appium is downloaded and installed, then a server is setup on our machine that exposes a REST API
+It receives connection and command request from the client and execute that command on mobile devices (Android / iOS)
+It responds back with HTTP responses. Again, to execute this request, it uses the mobile test automation frameworks to drive 
+the user interface of the apps. Framework like
+Apple Instruments for iOS (Instruments are available only in Xcode 3.0 or later with OS X v10.5 and later)
+Google UIAutomator for Android API level 16 or higher
+Selendroid for Android API level 15 or less
+7) What language does Appium support?
+
+Appium support any language that support HTTP request like Java, JavaScript with Node.js, Python, Ruby, PHP, Perl, etc.
+
+8) Explain the pros and cons of Appium?
+
+Pros:
+
+For programmer irrespective of the platform, he is automating ( Android or iOS) all the complexities will remain under single Appium server
+It opens the door to cross-platform mobile testing which means the same test would work on multiple platforms
+Appium does not require extra components in your App to make it automation friendly
+It can automate Hybrid, Web and Native mobile applications
+Cons:
+
+Running scripts on multiple iOS simulators at the same time is possible with Appium
+It uses UIAutomator for Android Automation which supports only Android SDK platform, API 16 or higher and to support the older API's 
+they have used another open source library called Selendroid
+9) Explain what is APPIUM INSPECTOR?
+
+Similar to Selenium IDE record and Playback tool, Appium has an "Inspector" to record and playback. It records and plays native 
+application behavior by inspecting DOM and generates the test scripts in any desired language. However, Appium Inspector does not 
+support Windows and use UIAutomator viewer in its option.
+
+10) Mention what are the basic requirement for writing Appium tests?
+
+For writing Appium tests you require,
+
+Driver Client: Appium drives mobile applications as though it were a user. Using a client library you write your Appium tests which 
+wrap your test steps and sends to the Appium server over HTTP.
+Appium Session: You have to first initialize a session, as such Appium test takes place in the session. Once the Automation is done 
+for one session, it can be ended and wait for another session
+Desired Capabilities: To initialize an Appium session you need to define certain parameters known as "desired capabilities" like 
+PlatformName, PlatformVersion, Device Name and so on. It specifies the kind of automation one requires from the Appium server.
+Driver Commands: You can write your test steps using a large and expressive vocabulary of commands.
+11) Mention what are the possible errors one might encounter using Appium?
+
+The possible errors one might face in Appium includes
+
+Error 1: The following desired capabilities are needed but not provided: Device Name, platformName
+Error 2: Could not find adb. Please set the ANDROID_HOME environment variable with the Android SDK root directory path
+Error 3: openqa.selenium.SessionNotCreatedException: A new session could not be created
+Error 4: How to find DOM element or XPath in a mobile application?
+12) Do you need a server machine to run tests on Appium?
+
+No, you don't need server machine to run tests on Appium. Appium facilitates a 2-tier architecture where a test machine connects to a 
+test server running Appium and automating the whole thing. You can have Appium running on the same machine where your test runs.
+
+13) Is it possible to interact with my apps using Javascript while I am testing with Appium?
+
+Yes, it is possible to interact with App while using Javascript. When the commands run on Appium, the server will send the script to 
+your app wrapped into an anonymous function to be executed.
+
+14) Mention what are the most difficult scenarios to test with Appium?
+
+The most difficult scenario to test with Appium is data exchange.
+
+15) While using Appium can I run my tests in a multithreaded environment?
+
+Yes, you can run the test in a multithreaded environment but you have to ensure that no more than one test runs at the same time 
+against the same Appium server.
+
+16) In Android, do you need an app's .apk to automate using Appium or you also need app in my workspace?
+
+In Android, you only need .apk file to automate using Appium.
+
+17) Explain what is Appium package master? How to create package?
+
+Appium package master is a set of tools manage and create appium packages. For example to create package you can use the code
+
+# using es7/babe1
+
+Gulp create-package -n <package-name>
+
+#regular es5
+
+Gulp create-package ---nobabe1 -n <package-name>
+
+The package will be generated in the out/<package-name>
+
+18) Explain how test frameworks are supported by Appium?
+
+Appium does not support test framework as such there is no need to support them. Appium can be used with any frameworks you want.
+
+
+
+
+</pre>
+</section>
+<footer class="page1-footer">
+<p id="end"> copyright @ Dilip </p>			<a href="#study" style="color: white;">study</a>
+</footer>
+
+
+</body>
+</html>

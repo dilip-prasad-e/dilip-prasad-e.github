@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style\style.css">
+<title> Stuff!!! </title>
+</head>
+<body>
+<header class="page1-header">
+<p id="study">
+Study Materials 
+</p> <a href="#end" style="color: white;">end</a>
+</header>
+<section class="page1-section">
+<pre>
+
+<b id="GN__DB_interview_questions:">GN__DB_interview_questions:</b>	<a href="https://dilip-prasad-e.github.io/dilip-prasad-e.github.io/index.html" class="button" type="submit">study</a>
+
+1) What is Database Testing?
+
+Database Testing is also known as Backend Testing. Database Testing is segmented into four different categories.
+
+Testing of Data Integrity
+Testing of Data Validity
+Data base related performance
+Testing of functions, procedure and triggers
+2) In database testing, what do we need to check normally?
+
+Normally, the things that we check in DB Testing are:
+
+Constraint Check
+Validation of a Field size
+Stored procedure
+Matching application field size to database
+Indexes for performance based issues
+3) Explain what is data driven test?
+
+In a data-table, to test the multi numbers of data, data-driven test is used. By using this it can easily 
+replace the parameters at the same time from different locations.
+
+4) What are joins and mention different types of joins?
+
+Join is used to display two or more than two table and the types of joins are:
+
+Natural Join
+Inner Join
+Outer Join
+Cross Join
+The outer join is divided again in two:
+
+Left outer join
+Right outer join
+5) What are indexes and mention different types of indexes?
+
+Indexes are database objects and they are created on columns. To fetch data quickly they are frequently 
+accessed. Different types of indexes are:
+
+B-Tree index
+Bitmap index
+Clustered index
+Covering index
+Non-unique index
+Unique index
+6) While testing stored procedures what are the steps does a tester takes?
+
+The tester will check the standard format of the stored procedures and also it checks the fields are correct 
+like updates, joins, indexes, deletions as mentioned in the stored procedure.
+
+7) How would you know for database testing, whether trigger is fired or not?
+
+On querying the common audit log you would know, whether, a trigger is fired or not. It is in audit log 
+where you can see the triggers fired.
+
+8) In data base testing, what are the steps to test data loading?
+
+Following steps need to follow to test data loading
+
+Source data should be known
+Target data should be known
+Compatibility of source and target should be checked
+In SQL Enterprise manager, run the DTS package after opening the corresponding DTS package
+You have to compare the columns of target and data source
+Number of rows of target and source should be checked
+After updating data in the source, check whether the changes appears in the target or not.
+Check NULLs and junk characters
+9) Without using Database Checkpoints, how you test a SQL Query in QTP?
+
+By writing scripting procedure in VBScript, we can connect to database and can test the queries and database.
+
+10) Explain how to use SQL queries in QTP ?
+
+In QTP using output database check point and database check, you have to select the SQL manual queries option. 
+After selecting the manual queries option, enter the "select" queries to fetch the data in the database and 
+then compare the expected and actual.
+
+11) What is the way of writing testcases for database testing?
+
+Writing a testcases is like functional testing. First you have to know the functional requirement of the 
+application. Then you have to decide the parameters for writing testcases like
+
+Objective: Write the objective that you would like to test
+Input method: Write the method of action or input you want to execute
+Expected: how it should appear in the database
+12) To manage and manipulate the test table what are the SQL statements that you have used in Database testing?
+
+The statements like SELECT, INSERT, UPDATE, DELETE are used to manipulate the table, while ALTER TABLE, 
+CREATE TABLE and DELETE TABLE are used to manage table.
+
+13) How to test database procedures and triggers?
+
+To test database procedures and triggers, input and output parameters must be known. EXEC statement can be 
+used to run the procedure and examine the behaviour of the tables.
+
+Open the database project in solution explorer
+Now in View menu, click the database schema
+Open the project folder from schema View menu
+Right click on the object that has to be tested, and then click on the dialog box that says Create Unit Tests
+After that create a new language test project
+Select either a) Insert the unit test or b) Create a new test and then click OK
+Project that has to be configured will be done by clicking on the Project Configuration dialog box.
+Once it configured click on OK
+14) How you can write testcases from requirements and do the requirements represents exact functionality of 
+AUT (Application Under Test)?
+
+To write a testcases from requirements, you need to analyse the requirements thoroughly in terms of 
+functionality. Thereafter you think about the appropriate testcases design techniques like Equivalence 
+partitioning, Black box design, Cause effect graphing etc. for writing the testcases.Yes, the requirements 
+represent exact functionality of AUT.
+
+15) What is DBMS?
+
+DBMS stand for Database management system, there are different types of DBMS
+
+Network Model
+Hierarchical Model
+Relational Model
+16) What is DML?
+
+DML stands for Data Manipulation Language, It is used to manage data with schema objects. It is a subset of SQL.
+
+17) What are DCL commands? What are the two types of commands used by DCL?
+
+DCL stands for Data Control Language, it is used to control data.
+
+The two types of DCL Commands are:
+
+Grant: By using this command user can access privilege to database
+
+Revoke: By using this command user cannot access the database
+
+18) What is white box testing and black box testing?
+
+Black box testing means testing the software for the outputs on giving particular inputs. This testing is 
+usually performed to see if the software meets the user's requirements. There is no specific functional output 
+expected for running this test.
+
+The white box testing is done to check the accuracy of code and logic of the program. This testing is done by the 
+programmer who knows the logical flow of the system.
+
+19) How does QTP evaluate test results?
+
+Once the testing is done, QTP will generate a report. This report will show the checkpoints, system message and 
+error that were detected while testing. The test results window will show any mismatches encountered at the checkpoints.
+
+20) Explain the QTP testing process?
+
+QTP testing process is based on following steps:
+Creating GUI (Graphical User Interface) Map files : Identifies the GUI object which has to be tested
+Creating test scripts: Test scripts are recorded
+Debug tests: Test should be debugged
+Run tests: Testcases should be run.
+View results: The results reflects the success or failure of the tests
+Report detects: If the test is failed, the reasons will be recorded in the report detect file
+21) What is load testing and give some examples of it?
+
+To measure the system response, load testing is done. If the load exceeds the users pattern it is known as stress 
+testing. Examples of load testing are downloading the set of large files, executing multiple applications on a single 
+computer, subjecting a server to large number of e-mails and allotting many tasks to a printer one after another.
+
+22) How to test database manually?
+
+Testing the database manually involves checking the data at the back end and to see whether the addition of data in 
+front end is affecting the back end or not, and same for delete, update, insert etc.
+
+23) What RDBMS stands for and what are the important RDMBS that SQL use?
+
+RDBMS stands for Relational Database Management Systems that use SQL, and the important RDBMS that SQL uses are Sybase,
+ Oracle, Access ,Ingres, Microsoft SQL server etc.
+
+24) What is performance testing and what are the bottlenecks of performance testing?
+
+Performance testing determines the speed of the computer system performance. It includes the quantitative tests like 
+response time measurement. The problem in performance testing is that you always need a well-trained and experienced 
+man power also the tools you use are expensive.
+
+25) What is DDL and what are their commands?
+
+To define database structure, a Developer uses DDL. DDL stands for Data Definition Language. The various DDL commands 
+include Create, Truncate, Drop, Alter, Comment and Rename.
+
+
+
+
+
+</pre>
+</section>
+<footer class="page1-footer">
+<p id="end"> copyright @ Dilip </p>			<a href="#study" style="color: white;">study</a>
+</footer>
+
+
+</body>
+</html>
